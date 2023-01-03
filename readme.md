@@ -6,7 +6,8 @@ This is a updated version of Savsoft Quiz v5.0
 <br>
 Changes I made:
 <br>
-- Translated to Dutch (English template is still available)
+- Translated to Dutch 
+. (English template is still available)
 <br>
 - Updated the interface
 <br>
@@ -23,7 +24,7 @@ To do:
 <br>
 - Rewrite php code to connect to MYSQL database for php7/8
 <br>
-  (can't run above php7.0 currently)
+. (can't run above php7.0 currently)
 <br>
 <br>
 <br>
@@ -44,9 +45,9 @@ Installation Instructions:
 <br>
 5. Log in:
 <br>
-.   User: admin@somedomain.something
+. .  User: admin@somedomain.something
 <br>
-.   Password: password
+. .  Password: password
 <br>
 6. Change admin credentials
 <br>
