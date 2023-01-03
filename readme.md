@@ -16,7 +16,8 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <strong>To do:</strong>
-- Rewrite php code to connect to MYSQL database for php7/8 <i>(can't run above php7.0 currently)</i>
+- Rewrite php code to connect to MYSQL database for php7/8 
+- <i>can't run above php7.0 currently</i>
 <br>
 <br>
 <br>
