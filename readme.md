@@ -15,8 +15,8 @@ I'm planning to simplify the tool so everyone can use it.
 - New SQL import file
 <br>
 <br>
-<strong>To do:</strong>
-- Rewrite php code to connect to MYSQL database for php7/8 
+<strong>To do:</strong><br>
+- Rewrite php code to connect to MYSQL database for php7/8 <br>
 - <i>can't run above php7.0 currently</i>
 <br>
 <br>
