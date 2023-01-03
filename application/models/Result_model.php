@@ -139,24 +139,22 @@ return $query->result_array();
  
  
  
-    function get_percentile($quid,$uid,$score){
+   function get_percentile($quid,$uid,$score){
   $logged_in =$this->session->userdata('logged_in');
 $gid= $logged_in['gid'];
 $res=array();
-	$this->db->select("savsoft_result.uid");
 	$this->db->where("savsoft_result.quid",$quid);
 	 $this->db->group_by("savsoft_result.uid");
-	// $this->db->order_by("savsoft_result.score_obtained",'DESC');
+	 $this->db->order_by("savsoft_result.score_obtained",'DESC');
 	$query = $this -> db -> get('savsoft_result');
 	$res[0]=$query -> num_rows();
 
-	$this->db->select("savsoft_result.uid");
 	
 	$this->db->where("savsoft_result.quid",$quid);
 	$this->db->where("savsoft_result.uid !=",$uid);
 	$this->db->where("savsoft_result.score_obtained <=",$score);
 	$this->db->group_by("savsoft_result.uid");
-	// $this->db->order_by("savsoft_result.score_obtained",'DESC');
+	 $this->db->order_by("savsoft_result.score_obtained",'DESC');
 	$querys = $this -> db -> get('savsoft_result');
 	$res[1]=$querys -> num_rows();
 		

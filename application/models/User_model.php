@@ -62,6 +62,7 @@ $this->db->limit(1);
 	$veri_code=$user['verify_code'];
 					 
 $verilink=site_url('login/verify/'.$veri_code);
+$loginlink = site_url('login');
  $this->load->library('email');
 
  if($this->config->item('protocol')=="smtp"){
@@ -83,6 +84,7 @@ $verilink=site_url('login/verify/'.$veri_code);
 			$message=$this->config->item('activation_message');;
 			
 			$message=str_replace('[verilink]',$verilink,$message);
+	 		$message = str_replace('[loginlink]', $loginlink, $message);
 		
 			$toemail=$email;
 			 
@@ -483,6 +485,7 @@ return $revenue;
 				 // send verification link in email
 				 
 $verilink=site_url('login/verify/'.$veri_code);
+$loginlink = site_url('login');
  $this->load->library('email');
 
  if($this->config->item('protocol')=="smtp"){
@@ -504,6 +507,7 @@ $verilink=site_url('login/verify/'.$veri_code);
 			$message=$this->config->item('activation_message');;
 			
 			$message=str_replace('[verilink]',$verilink,$message);
+			$message = str_replace('[loginlink]', $loginlink, $message);
 		
 			$toemail=$this->input->post('email');
 			 

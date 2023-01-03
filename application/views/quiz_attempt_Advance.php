@@ -167,8 +167,7 @@ foreach($questions as $qk => $question){
  
  <div id="q<?php echo $qk;?>" class="question_div">
 		
-		<div class="question_container"  
-		style="height:auto;background:#eeeeee;padding:4px;margin:5px;border:1px solid #dddddd;">
+		<div class="question_container" style="height:auto;background:#eeeeee;padding:4px;margin:5px;border:1px solid #dddddd;">
 		 <?php echo $this->lang->line('question');?> <?php echo $qk+1;?>)<br>
 		 <?php echo $question['question'];?>
 		 

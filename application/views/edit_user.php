@@ -107,7 +107,7 @@
 	}
 	?>	
  
-	<button class="btn btn-default" type="submit"><?php echo $this->lang->line('submit');?></button>
+	<button class="btn btn-default btn-primary" type="submit"><?php echo $this->lang->line('submit');?></button>
  
 		</div>
 </div>

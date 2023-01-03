@@ -86,7 +86,7 @@ window.location="<?php echo site_url('quiz/submit_quiz/');?>";
 <div class="save_answer_signal" id="save_answer_signal2"></div>
 <div class="save_answer_signal" id="save_answer_signal1"></div>
 
-<div style="float:right;width:150px; margin-right:10px;" >
+<div style="float:right;width:150px; margin-right:10px;margin-top:10px;" >
 
 	Time left: <span id='timer' >
 	<script type="text/javascript">window.onload = CreateTimer("timer", <?php echo $seconds;?>);</script>
@@ -173,7 +173,9 @@ foreach($questions as $qk => $question){
 		echo $question['paragraph']."<hr>";
 		}
 		?>
+		<div style="font-weight:700;margin-bottom:10px;">
 		 <?php echo $this->lang->line('question');?> <?php echo $qk+1;?>)<br>
+		 </div>
 		 <?php 
 		 echo str_replace('../../../',base_url(),str_replace('../../../../',base_url(),$question['question']));
 /* 
@@ -295,7 +297,7 @@ echo $somevar->saveHTML();
 			 
 		<div class="op"> 
 		<?php echo $this->lang->line('answer');?> 
-		<input type="text" name="answer[<?php echo $qk;?>][]" value="<?php echo $save_ans;?>" id="answer_value<?php echo $qk;?>"   >  
+		<input type="text" style="margin-left:10px;padding-left:5px;" name="answer[<?php echo $qk;?>][]" value="<?php echo $save_ans;?>" id="answer_value<?php echo $qk;?>"   >  
 		</div>
 			 
 			 
@@ -421,14 +423,14 @@ echo $somevar->saveHTML();
 ?>
 </form>
  </div>
-  <div class="col-md-3" style="min-height:84%;padding:5px;color:#212121;background:#CEDDF0;">
+  <div class="col-md-3" style="min-height:84%;padding:5px;color:#212121;">
 
   
   
   
    
-<b> <?php echo $this->lang->line('questions');?></b>
-	<div style="max-height:60%;overflow-y:auto;">
+<div style="margin-left:5px;margin-top:15px;"> <?php echo $this->lang->line('questions');?></div>
+	<div style="max-height:60%;overflow-y:auto;margin-top:15px;">
 		<?php 
 		for($j=0; $j < $quiz['noq']; $j++ ){
 			?>
@@ -444,17 +446,15 @@ echo $somevar->saveHTML();
 	
 	
 	<br>
-	<hr>
-	<br>
 	<div>
 	
 
 	
 <table>
-<tr><td style="font-size:12px;"><div class="qbtn" style="background:#449d44;">&nbsp;</div> <?php echo $this->lang->line('Answered');?>  </td></tr>
-<tr><td style="font-size:12px;"><div class="qbtn" style="background:#c9302c;">&nbsp;</div> <?php echo $this->lang->line('UnAnswered');?>  </td></tr>
-<tr><td style="font-size:12px;"><div class="qbtn" style="background:#ec971f;">&nbsp;</div> <?php echo $this->lang->line('Review-Later');?>  </td></tr>
-<tr><td style="font-size:12px;"><div class="qbtn" style="background:#212121;">&nbsp;</div> <?php echo $this->lang->line('Not-visited');?>  </td></tr>
+<tr><td style="font-size:12px;"><div class="qbtn" style="background:#449d44;">&nbsp;</div> <p style="margin-top: 10px;padding-right: 90px;display: inline-block;"> <?php echo $this->lang->line('Answered');?> </p> </td></tr>
+<tr><td style="font-size:12px;"><div class="qbtn" style="background:#c9302c;">&nbsp;</div> <p style="margin-top: 10px;padding-right: 90px;display: inline-block;"><?php echo $this->lang->line('UnAnswered');?> </p> </td></tr>
+<tr><td style="font-size:12px;"><div class="qbtn" style="background:#ec971f;">&nbsp;</div> <p style="margin-top: 10px;padding-right: 90px;display: inline-block;"> <?php echo $this->lang->line('Review-Later');?> </p> </td></tr>
+<tr><td style="font-size:12px;"><div class="qbtn" style="background:#212121;">&nbsp;</div> <p style="margin-top: 10px;padding-right: 90px;display: inline-block;"> <?php echo $this->lang->line('Not-visited');?> </p> </td></tr>
 </table>
 
 

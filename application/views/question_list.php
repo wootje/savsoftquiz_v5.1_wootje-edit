@@ -200,9 +200,11 @@ if(($limit-($this->config->item('number_of_rows')))>=0){ $back=$limit-($this->co
 	<input type="hidden" name="size" value="3500000">
 	<input type="file" name="xlsfile" style="width:150px;float:left;margin-left:10px;">
 	<div style="clear:both;margin-bottom:15px;"></div>
-	<input type="submit" value="Import" style="margin-top:5px;" class="btn btn-default">
 	
-<a href="<?php echo base_url();?>sample/sample.xls" target="new">Click here</a> <?php echo $this->lang->line('upload_excel_info');?> 
+	<span id="commentline">
+		<input type="submit" value="Import" style="margin-top:5px;" class="btn btn-default">
+		<a href="<?php echo base_url();?>sample/sample.xls" target="new">Click here</a> <?php echo $this->lang->line('upload_excel_info');?>
+	</span>
 </form>
 
 </div>
@@ -261,10 +263,10 @@ if(($limit-($this->config->item('number_of_rows')))>=0){ $back=$limit-($this->co
 	<tr><td>Correct Option Splitter: </td><td><input type="text" name="correct_split" value="/Correct:/"></td></tr>
 	</table>
 	</div>
-	
-	<input type="submit" value="Import" style="margin-top:5px;" class="btn btn-default">
-	
-<a href="<?php echo base_url();?>sample/sample.docx" target="new">Click here</a> <?php echo $this->lang->line('upload_doc_info');?> 
+	<span id="commentline">
+		<input type="submit" value="Import" style="margin-top:5px;" class="btn btn-default">
+		<a href="<?php echo base_url();?>sample/sample.docx" target="new">Click here</a> <?php echo $this->lang->line('upload_doc_info');?>
+	</span>
 </form>
 
 </div>

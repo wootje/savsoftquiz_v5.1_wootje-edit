@@ -1,11 +1,12 @@
 <?php
 ob_start();
-header('Access-Control-Allow-Origin: *');
 /* 
 * Set default time zone 
 * find supported parameter or time zones at http://php.net/manual/en/timezones.php
-*/
+
 date_default_timezone_set('Asia/Kolkata');
+*/
+date_default_timezone_set('Europe/Amsterdam');
 /**
  * CodeIgniter
  *

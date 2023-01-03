@@ -247,7 +247,7 @@ $cia_tim_cate=cia_tim_cate($correct_incorrect_unattempted,explode(",",$result['i
 <div class="col-lg-12" >
 <center><h3><span style="color:#e39500;"> 
 <?php echo $this->lang->line('hello');?> <?php echo $result['first_name'];?> 
-<?php echo $result['last_name'];?>!</span>  <?php echo str_replace('{attempt_no}',ordinal($attempt),$this->lang->line('title_result'));?> </h3></center>
+<?php echo $result['last_name'];?>!</span>  <?php echo str_replace('{attempt_no}',$attempt,$this->lang->line('title_result'));?> </h3></center>
 </div>
 <div class="col-lg-12" >
 <center>
@@ -295,12 +295,12 @@ $cia_tim_cate=cia_tim_cate($correct_incorrect_unattempted,explode(",",$result['i
 if($result['view_answer']=='1' || $logged_in['su']=='1'){
 	
 ?>
-<a href="#answers_i" class="btn btn-info" style="margin-top:10px;"><?php echo $this->lang->line('answer_sheet');?></a>
+<a href="#answers_i" class="btn btn-info" style="margin:10px;"><?php echo $this->lang->line('answer_sheet');?></a>
 <?php 
 }
 ?>
 
-<a href="javascript:print();" class="btn btn-success printbtn" style="margin-top:10px;"><?php echo $this->lang->line('print');?></a>
+<a href="javascript:print();" class="btn btn-success printbtn" style="margin:10px;"><?php echo $this->lang->line('print');?></a>
 
 <?php
 if($result['gen_certificate']=='1'){
@@ -660,7 +660,7 @@ $(window).on('load', function() {
  }
  if($this->config->item('sharethis')){
  ?>
-  <div class="col-md-12">
+  <div class="col-md-12" style="display:none;">
   <h3><?php echo $this->lang->line('share_on');?></h3>
  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=<?php echo $this->config->item('sharethis_property');?>&product=inline-share-buttons"></script>
  <div class="sharethis-inline-share-buttons"></div>
@@ -677,8 +677,8 @@ $(window).on('load', function() {
  // print_r($result['incorrect_score']);
  $ind_score=explode(',',$result['score_individual']); 
  ?>
-  <div class="col-md-12">
-		 <h3><?php echo $this->lang->line('categorywise');?></h3>
+  <div class="col-md-12" style="margin-bottom:10px;">
+		 <h3 style="margin-bottom:20px;"><?php echo $this->lang->line('categorywise');?></h3>
 					<table class="table table-bordered">
 					 <thead> <tr><th style="background:#337ab7;color:#ffffff;"><?php echo $this->lang->line('category_name');?></th>
 					 <th  style="background:#337ab7;color:#ffffff;"><?php echo $this->lang->line('score_obtained');?></th>
@@ -750,24 +750,7 @@ $(window).on('load', function() {
  
  
  
- 
-<center><?php 
 
-	$this->db->where("add_status","Active");
-	$this->db->where("position","Center_Result");
-	$query=$this->db->get('savsoft_add');
-	if($query->num_rows()==1){
-	$ad=$query->row_array();
-	if($ad['advertisement_code'] != ""){
-	echo $ad['advertisement_code'];
-	}else if($ad['banner']!=''){ ?><a href="<?php echo $ad['banner_link'];?>" target="new_add"><img src="<?php echo base_url('upload/'.$ad['banner']);?>" class="img-responsive"  ></a> <?php    
-	
-	}
-	}
-	
-	
-	
-?></center>
  
 	 <div id="page_break"></div>
  <div class="col-md-12">

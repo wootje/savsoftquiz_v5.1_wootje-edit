@@ -1,4 +1,9 @@
   <link href="<?php echo base_url('css/select2.min.css');?>" rel="stylesheet" />
+  <style>
+	td input[type="text"] {
+		text-align: center;
+	}
+  </style>
 <script src="<?php echo base_url('js/select2.min.js');?>"></script>
 <div class="container">
 <?php
@@ -221,14 +226,14 @@ if(!$this->session->flashdata('addquestion')){
  <?php 
  }
  ?>
- <a href="<?php echo site_url('quiz/add_question/'.$quiz['quid']);?>" class="btn btn-danger"  ><?php echo $this->lang->line('add_question_into_quiz');?></a>
+ <a href="<?php echo site_url('quiz/add_question/'.$quiz['quid']);?>" class="btn btn-danger" ><?php echo $this->lang->line('add_question_into_quiz');?></a>
 <?php
  }else{
  
 ?>
-<h4><?php echo $this->lang->line('questions_added_into_quiz');?></h4>
+<h4  style="margin-left:0px!important;"><?php echo $this->lang->line('questions_added_into_quiz');?></h4>
 
-<a href="<?php echo site_url('quiz/add_question/'.$quiz['quid']);?>" class="btn btn-danger"  ><?php echo $this->lang->line('add_question_into_quiz');?></a>
+<a href="<?php echo site_url('quiz/add_question/'.$quiz['quid']);?>" class="btn btn-danger" style="margin:10px 10px 10px 15px;" ><?php echo $this->lang->line('add_question_into_quiz');?></a>
   
 <table class="table table-bordered" style="margin-top:10px;">
 <tr>
@@ -262,13 +267,13 @@ foreach($questions as $key => $val){
 <td><?php echo $val['level_name'];?></td>
 <td><input type="text" style="width:60px;" name="i_correct[]" value="<?php if(isset($quiz['correct_score'][$key])){ echo explode(',',$quiz['correct_score'])[$key]; }else{ echo '1'; } ?>"> </td>
 <td><input type="text" style="width:60px;" name="i_incorrect[]" value="<?php if(isset($quiz['incorrect_score'][$key])){ echo explode(',',$quiz['incorrect_score'])[$key]; }else{ echo '0'; } ?>"> </td>
-<td>
+<td style="width:120px;">
  
  <a href="<?php echo site_url('quiz/remove_qid/'.$quiz['quid'].'/'.$val['qid']);?>" title="<?php echo $this->lang->line('remove_from_quiz');?>"><img src="<?php echo base_url('images/cross.png');?>"></a>
  <?php 
  if($key==0){
 	 ?>
-	 <img src="<?php echo base_url();?>images/empty.png" title="">
+	 <img style="display:none;" src="<?php echo base_url();?>images/empty.png" title="">
 	 <?php 
  }else{
 	 ?>
@@ -406,7 +411,7 @@ if($this->session->flashdata('addquestion') && $quiz['question_selection']=='0')
 ?>
 <a class="btn btn-success"  href="<?php echo site_url('quiz');?>"><?php echo $this->lang->line('back');?></a>
 <?php }else{ ?>
-	<button class="btn btn-success" type="submit"><?php echo $this->lang->line('update');?> <?php echo $this->lang->line('quiz');?></button>
+	<button class="btn btn-success" type="submit"><?php echo $this->lang->line('update');?></button>
 	<?php 
 	}
 	?>

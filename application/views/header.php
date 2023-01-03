@@ -11,7 +11,7 @@
   
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url();?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="<?php echo base_url(); ?>css/font/font.css" rel="stylesheet">
  <!-- custom css -->
 	<link href="<?php echo base_url('css/style.css?q='.time());?>" rel="stylesheet">
 	
@@ -99,9 +99,9 @@ form{
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="https://savsoftquiz.com">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
          
-        <div class="sidebar-brand-text mx-3"><?php if($hres[0]['setting_value']==""){ ?>Savsoft Quiz <sup>5.0</sup><?php }else{ echo $hres[0]['setting_value']; }?> </div>
+        <div class="sidebar-brand-text mx-3"><?php if($hres[0]['setting_value']==""){ echo $this->lang->line('savsoft_quiz'); }else{ echo $hres[0]['setting_value']; }?> </div>
 		
 		
       </a>
@@ -327,32 +327,7 @@ if(in_array('All',explode(',',$logged_in['setting']))){
 <?php 
 }
 ?>	  
-		<?php 
-if(in_array('All',explode(',',$logged_in['setting']))){
-?> 
-
-  <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLanding" aria-expanded="true" aria-controls="collapseStudy">
-          <i class="fas fa-fw fa-puzzle-piece"></i>
-          <span>Landing Page</span>
-        </a>
-        <div id="collapseLanding" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
-          
-          <a class="collapse-item" href="<?php echo site_url('payment_gateway');?>">Menu</a>
-           
-          <a class="collapse-item" href="<?php echo site_url('payment_gateway');?>">Pages/Post</a>
-          <a class="collapse-item" href="<?php echo site_url('payment_gateway');?>">Slider</a>
-           <a class="collapse-item" href="<?php echo site_url('payment_gateway');?>">Design</a>
-         </div>
-        </div>
-      </li>
-
-
- <?php 
-}
-?>  
+	  
 
     </ul>
     <!-- End of Sidebar -->
