@@ -6,7 +6,7 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <br>
-Changes I made:
+<strong>Changes I made:</strong>
 - Translated to Dutch (English template is still available)
 - Updated the interface
 - Remade some web pages
@@ -15,7 +15,7 @@ Changes I made:
 - New SQL import file
 <br>
 <br>
-To do:
+<strong>To do:</strong>
 - Rewrite php code to connect to MYSQL database for php7/8 <i>(can't run above php7.0 currently)</i>
 <br>
 <br>
@@ -26,7 +26,7 @@ To do:
 Online Demo of stock 5.0 version: <a href="https://softaculous.com/softaculous/demos/Savsoft_Quiz" target="onlindedemo">https://softaculous.com/softaculous/demos/Savsoft_Quiz</a> 
 <br>
 <br> 
-Installation Instructions:
+<strong>Installation Instructions:</strong>
 1. Upload files to your web server.
 2. Import SQL file to a new database.
 3. Update <i>\application\config\sq_config.php</i> with your database credentials.
