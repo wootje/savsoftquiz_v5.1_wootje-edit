@@ -2,7 +2,9 @@ This is a updated version of Savsoft Quiz v5.0
 <br>
 <br>
 <br>
-Done so far:
+<br>
+<br>
+Changes I made:
 <br>
 - Translated to Dutch (English template is still available)
 <br>
@@ -42,9 +44,9 @@ Installation Instructions:
 <br>
 5. Log in:
 <br>
-   User: admin@somedomain.something
+.   User: admin@somedomain.something
 <br>
-   Password: password
+.   Password: password
 <br>
 6. Change admin credentials
 <br>
