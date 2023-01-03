@@ -13,6 +13,7 @@ I'm planning to simplify the tool so everyone can use it.
 - Updated CSS
 - Beautified some code
 - New SQL import file
+- Imported external CSS
 <br>
 <br>
 <strong>To do:</strong><br>
