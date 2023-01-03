@@ -2,7 +2,7 @@ This is a updated version of Savsoft Quiz v5.0
 <br>
 <br>
 <br>
-<strong>Done so far:</strong>
+Done so far:
 <br>
 - Translated to Dutch (English template is still available)
 <br>
@@ -17,7 +17,7 @@ This is a updated version of Savsoft Quiz v5.0
 - New SQL import file
 <br>
 <br>
-<strong>To do:</strong>
+To do:
 <br>
 - Rewrite php code to connect to MYSQL database for php7/8
 <br>
@@ -36,9 +36,9 @@ Installation Instructions:
 <br>
 2. Import SQL file to a new database.
 <br>
-3. Update \application\config\sq_config.php with your database credentials.
+3. Update <i>\application\config\sq_config.php</i> with your database credentials.
 <br>
-4. Optional: Restore language file to English > Directory: \application\language\english
+4. Optional: Restore language file to English > Directory: <i>application\language\english</i>
 <br>
 5. Log in:
 <br>
