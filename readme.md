@@ -7,17 +7,11 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 Changes I made:
-<br>
 - Translated to Dutch (English template is still available)
-<br>
 - Updated the interface
-<br>
 - Remade some web pages
-<br>
 - Updated CSS
-<br>
 - Beautified some code
-<br>
 - New SQL import file
 <br>
 <br>
