@@ -27,17 +27,17 @@ I'm planning to simplify the tool so everyone can use it.
 Online Demo of stock 5.0 version: <a href="https://softaculous.com/softaculous/demos/Savsoft_Quiz" target="onlindedemo">https://softaculous.com/softaculous/demos/Savsoft_Quiz</a> 
 <br>
 <br> 
-<strong>Installation Instructions:</strong>
-1. Upload files to your web server.
-2. Import SQL file to a new database.
-3. Update <i>\application\config\sq_config.php</i> with your database credentials.
-4. Optional: Restore language file to English > Directory: <i>application\language\english</i>
-5. Log in:
-    User: admin@somedomain.something
-    Password: password
-6. Change admin credentials
-7. Set own e-mail server
-8. Enjoy the software
+<strong>Installation Instructions:</strong><br>
+1. Upload files to your web server.<br>
+2. Import SQL file to a new database.<br>
+3. Update <i>\application\config\sq_config.php</i> with your database credentials.<br>
+4. Optional: Restore language file to English > Directory: <i>application\language\english</i><br>
+5. Log in:<br>
+    User: admin@somedomain.something<br>
+    Password: password<br>
+6. Change admin credentials<br>
+7. Set own e-mail server<br>
+8. Enjoy the software<br>
 <br>
 <br>
 <br>
