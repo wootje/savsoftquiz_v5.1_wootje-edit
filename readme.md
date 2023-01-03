@@ -16,10 +16,8 @@ Changes I made:
 <br>
 <br>
 To do:
+- Rewrite php code to connect to MYSQL database for php7/8 <i>(can't run above php7.0 currently)</i>
 <br>
-- Rewrite php code to connect to MYSQL database for php7/8
-<br>
-. (can't run above php7.0 currently)
 <br>
 <br>
 <br>
@@ -29,25 +27,15 @@ Online Demo of stock 5.0 version: <a href="https://softaculous.com/softaculous/d
 <br>
 <br> 
 Installation Instructions:
-<br>
 1. Upload files to your web server.
-<br>
 2. Import SQL file to a new database.
-<br>
 3. Update <i>\application\config\sq_config.php</i> with your database credentials.
-<br>
 4. Optional: Restore language file to English > Directory: <i>application\language\english</i>
-<br>
 5. Log in:
-<br>
-. .  User: admin@somedomain.something
-<br>
-. .  Password: password
-<br>
+    User: admin@somedomain.something
+    Password: password
 6. Change admin credentials
-<br>
 7. Set own e-mail server
-<br>
 8. Enjoy the software
 <br>
 <br>
