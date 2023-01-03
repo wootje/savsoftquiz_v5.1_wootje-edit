@@ -2,8 +2,13 @@ This is a updated version of Savsoft Quiz v5.0
 <br>
 <br>
 <br>
+I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
+<br>
+Changes I made:
+<br>
+- Translated to Dutch (English template is still available)
 <br>
 - Updated the interface
 <br>
