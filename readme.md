@@ -7,8 +7,9 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <strong>Changes I made:</strong>
+- Removed all HTML elements to display ads
 - Added Dutch translation
-- Added options to Dutch & English language template
+- Added new variables to the Dutch & English language templates
 - Rebuild login page
 - Rebuild register page
 - Added redirects to register process so the user won't have to navigate manually
@@ -26,6 +27,13 @@ I'm planning to simplify the tool so everyone can use it.
 <strong>To do:</strong><br>
 - Rewrite php code to connect to MYSQL database for php7/8 <br>
 - <i>can't run above php7.0 currently</i>
+<br>
+<br>
+<br>
+The text editor blends into the skin
+<br>
+<br>
+<img src="/screenshots/screenshot1.png"></img>
 <br>
 <br>
 <br>
