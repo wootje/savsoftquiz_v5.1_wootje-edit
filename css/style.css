@@ -1,7 +1,7 @@
- .login{
-background-image:url('../images/bg.jpg');  background-size:     cover;  background-repeat:   no-repeat;
+ /*.login{
+	background-image:url('../images/bg.jpg');*/  background-size:     cover;  background-repeat:   no-repeat;
     
-}
+}*/
 .btn{
 
 border-radius:0px;
@@ -19,7 +19,6 @@ img{
 	
 	.question_container{
 		padding:4px;
-		max-height:35%;
 		overflow-y:auto;
 		margin: 20px;		 
 	}
@@ -400,4 +399,133 @@ padding:5px;
 .hoverbg:hover{
 	background:#eeeeee;
 }
- 
+
+
+
+
+
+/* CUSTOM CSS */
+
+
+
+/* LOGIN & REGISTER FORM */
+
+#loginwindow {
+	max-width: 400px;
+	height: max-content;
+	margin: 30px auto auto auto;
+	padding: 20px 0;
+	background: #fff;
+	border-radius: 10px;
+}
+
+#logincontent {
+	margin: 20px;
+}
+
+#inputFirstname, 
+#inputLastname, 
+#inputEmail, 
+#inputPassword,
+#username,
+#password {
+   height: 3.5em!important;
+padding-left: 1.5rem;
+font-weight: 400;
+   line-height: 1.5;
+   font-size: .8rem;
+   border-radius: 10rem;
+   padding: 0em 1rem;
+   color: #6e707e;
+   background-color: #fff;
+   background-clip: padding-box;
+   border: 1px solid #d1d3e2;
+}
+
+button.btn.btn-primary.btn-user.btn-block.btn-submit.btn-left {
+   font-size: .8rem;
+   border-radius: 10rem;
+   padding: .75rem 1rem;
+}
+
+span.mr-2.d-none.d-lg-inline.text-gray-600.small {
+   display: inline-block!important;
+   text-align: center!important;
+}
+
+
+
+/* MOBILE VIEW */
+
+@media (max-width:927px){
+    #accordionSidebar {
+	display: inline-flex;
+    }
+    ul#accordionSidebar.navbar-nav.bg-gradient-primary.sidebar.sidebar-dark.accordion {
+    	width: 110px!important;
+    }
+
+    #accordionSidebar li.nav-item {
+    	margin: 0 -5px!important;
+    	width: 90px!important;
+    	word-break: break-word;
+    }
+    .footer_buttons {
+    	position: stickyy!important;
+    	padding-top: 10px!important;
+	height: 140px!important;
+    }
+    .btn {
+    	margin-top: 10px!important;
+    	margin-bottom: 15px!important;
+    }
+    img {
+    	overflow: auto!important;
+    }
+    .col-md-3 {
+    	margin-left: 10px;
+    }
+    .container {
+    	padding-left: 0.5rem!important;
+    	padding-right: 0rem!important;
+   }
+   .p-5 {
+    	padding: 1.5rem!important;
+	max-width: 25em!important;
+   }
+   .col-lg-6 {
+    	padding-left: 0!important;
+   }
+   .sidebar {
+    	max-width: 100px!important;
+   }
+   .sidebar .nav-item .nav-link {
+    	padding-left: 3px!important;
+    	padding-right: 3px!important;
+   }
+   #accordionSidebar center span {
+    	word-break: break-word;
+    	height: 150px!important;
+    	padding: 6px;
+   }
+
+}
+
+@media (max-width:600px){
+   .containter,
+   .container-fluid {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+	maring-left: 0px!important;
+	margin-right: 0px!important;
+   }
+   .containter h3 {
+	margin-left: 5px;
+   }
+   .col-md-12 .table.table-bordered tbody tr th {
+    	padding-left: 5px!important;
+    	padding-right: 5px!important;
+    	margin: 0px!important;
+    	max-width: 60px!important;
+   }
+}
