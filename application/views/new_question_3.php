@@ -20,8 +20,7 @@
 							<h4 style="font-weight:700;margin-left:0px;"><?php echo $this->lang->line('match_the_column'); ?></h4>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_category'); ?></label>
+							<label><b><?php echo $this->lang->line('select_category'); ?></b></label>
 							<select class="form-control" name="cid">
 								<?php
 								foreach ($category_list as $key => $val) {
@@ -35,8 +34,7 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_level'); ?></label>
+							<label><b><?php echo $this->lang->line('select_level'); ?></b></label>
 							<select class="form-control" name="lid">
 								<?php
 								foreach ($level_list as $key => $val) {
@@ -53,8 +51,7 @@
 						if ($para == 1) {
 							?>
 							<div class="form-group">
-								<label for="inputEmail"><?php
-									echo $this->lang->line('paragraph'); ?></label>
+								<label for="inputEmail"><b><?php echo $this->lang->line('paragraph'); ?></b></label>
 								<textarea name="paragraph" class="form-control"><?php
 									if (isset($qp)) {
 										echo $qp['paragraph'];
