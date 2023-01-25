@@ -7,16 +7,20 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <strong>Changes I made:</strong>
-- Translated to Dutch (English template is still available)
-- Updated the interface
-- Rebuild some web pages from scratch
-- Beautified some code
-- New SQL import file
-- Imported external CSS
+- Added Dutch translation
+- Added options to Dutch & English language template
+- Rebuild login page
+- Rebuild register page
+- Added redirects to register process so the user won't have to navigate manually
+- Beautified/reforatted most of the code so it's mmuch easier to read
+- New SQL import file - removed all unnecessary files
+- Imported all external CSS code - not depended on external platforms any more
 - Added CSS code for mobile users
 - Restyled all buttons so the text is easier to read
-- Added CSS code to render all content
-- Fixed other minor bugs
+- Added CSS code to render all content - text & images look much better now
+- Restyled the 'add' and 'edit' question pages
+- Fixed bugs
+- A lot of random restyling
 <br>
 <br>
 <strong>To do:</strong><br>
