@@ -17,13 +17,11 @@
 						}
 						?>
 						<div class="form-group">
-							<?php
-							echo $this->lang->line('multiple_choice_single_answer'); ?>
+							<h4 style="font-weight:700;margin-left:0px;"><?php echo $this->lang->line('multiple_choice_single_answer'); ?></h4>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_category'); ?></label>
-							<select class="form-control" name="cid">
+							<label><b><?php echo $this->lang->line('select_category'); ?></b></label>
+							<select class="form-control" name="cid" style="margin-left:20px;">
 								<?php
 								foreach ($category_list as $key => $val) {
 									?>
@@ -39,9 +37,8 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_level'); ?></label>
-							<select class="form-control" name="lid">
+							<label><b><?php echo $this->lang->line('select_level'); ?></b></label>
+							<select class="form-control" name="lid" style="margin-left:20px;">
 								<?php
 								foreach ($level_list as $key => $val) {
 									?>
@@ -149,7 +146,7 @@
 							<?php
 						}
 						?>
-						<button class="btn btn-default" type="submit"><?php
+						<button class="btn btn-default" type="submit" style="margin-bottom:40px;"><?php
 							echo $this->lang->line('submit'); ?></button>
 					</div>
 				</div>
