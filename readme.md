@@ -30,7 +30,7 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <br>
-The text editor blends into the skin
+The text editor blends into the skin after restyling:
 <br>
 <br>
 <img src="/screenshots/screenshot1.png"></img>
