@@ -417,10 +417,24 @@ tbody, table, tr, tx, td,
 ul, li, a, p, img,
 h1, h2, h3, h4, h5 {
 	/*font-family: 'Nokora', sans-serif!important;*/
+	font-family: 'Nokora', sans-serif!important;
 	text-rendering: geometricprecision!important;
 	color-rendering: optimizeQuality!important;
 	image-rendering: optimizequality!important;
 	shape-rendering: geometricprecision!important;
+}
+
+html, body, div, span, input,
+tbody, table, tr, tx, td,
+ul, li, a, p, img,
+h1, h2, h3, h4, h5 {
+  -ms-user-select: none!important;
+  -o-user-select: none!important;
+  -moz-user-select: none!important;
+  -webkit-user-select: none!important;
+  -webkit-touch-callout:none!important;
+  -khtml-user-select: none!important;
+  user-select:none!important;
 }
 
 .sidebar-brand-text.mx-3 {
