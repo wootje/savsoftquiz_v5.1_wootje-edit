@@ -9,13 +9,14 @@ I'm planning to simplify the tool so everyone can use it.
 <strong>Changes I made:</strong>
 - Translated to Dutch (English template is still available)
 - Updated the interface
-- Remade some web pages
-- Updated CSS
+- Rebuild some web pages from scratch
 - Beautified some code
 - New SQL import file
 - Imported external CSS
 - Added CSS code for mobile users
 - Restyled all buttons so the text is easier to read
+- Added CSS code to render all content
+- Fixed other minor bugs
 <br>
 <br>
 <strong>To do:</strong><br>
