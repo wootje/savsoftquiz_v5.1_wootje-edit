@@ -407,6 +407,113 @@ padding:5px;
 /* CUSTOM CSS */
 
 
+/* TINYMCE */
+
+
+div.row div.col-lg-6 div.form-group label {
+    font-weight: 700;
+}
+
+.login-panel.panel.panel-default .panel-body .form-group {
+    margin-top: 30px;
+}
+
+.col-lg-6,
+.mce-panel {
+    -webkit-box-flex: 0!important;
+    -ms-flex: 0 0 50%!important;
+    flex: 0 0 100%!important;
+    max-width: 100%!important;
+}
+
+.col-lg-6 input[type="radio"] {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.mce-tinymce.mce-container.mce-panel {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 0px solid #00000033!important;
+}
+
+.mce-container-body.mce-flow-layout,
+.mce-toolbar-grp.mce-container.mce-panel.mce-stack-layout-item,
+.mce-statusbar.mce-container.mce-panel.mce-stack-layout-item mce-last,
+.mce-widget.mce-btn {
+    background-color: #f8f9fc;
+}
+
+.mce-widget.mce-btn:hover {
+   color: #01689b!important;
+   background-color: #fff0!important;
+}
+
+.mce-container.mce-menubar.mce-toolbar.mce-stack-layout-item.mce-first,
+.mce-menubar {
+    border: none;
+}
+
+
+.mce-edit-area.mce-container.mce-panel.mce-stack-layout-item,
+.mce-statusbar.mce-container.mce-panel.mce-stack-layout-item.mce-last {
+    border: none!important;
+    border-width: 0px!important;
+}
+
+.mce-edit-area.mce-container.mce-panel.mce-stack-layout-item,
+#question_ifr,
+body#tinymce {
+    min-height:100px!important;
+}
+
+.mce-branding-powered-by {
+    display:none!important;
+}
+
+.mce-wordcount.mce-widget.mce-label.mce-flow-layout-item {
+    margin-right: 20px;
+}
+
+.mce-tinymce.mce-container.mce-panel {
+    margin: 20px 20px 20px 20px!important
+}
+
+.mce-container.mce-menubar.mce-toolbar.mce-stack-layout-item.mce-first {
+    border-top: 1px solid #01689b!important;
+}
+
+.mce-path-item.mce-last {
+    display: none;
+    height: 10px!important;
+}
+
+.mce-edit-area.mce-container.mce-panel.mce-stack-layout-item {
+    border-top: 1px solid #b3b3b3!important;
+    border-bottom: 1px solid #b3b3b3!important;
+}
+
+.mce-wordcount.mce-widget.mce-label.mce-flow-layout-item {
+    letter-spacing: 0.5px;
+    font-size: 13px;
+    opacity: 90%;
+}
+
+i.mce-ico.mce-i-resize {
+    color: #01689b;
+    font-weight: 700;
+}
+
+.mce-widget.mce-btn.mce-menubtn.mce-flow-layout-item:hover,
+.mce-widget.mce-btn:hover {
+    border-color: #01689b;
+    border-radius: 5px;
+}
+
+
+
 
 /* RENDERING */
 
