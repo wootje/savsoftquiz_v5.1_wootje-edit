@@ -22,14 +22,8 @@
 		</style>
 	</head>
 	<body class="bg-gradient-primary">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-xl-10 col-lg-12 col-md-9">
-					<div class="card o-hidden border-0 shadow-lg my-5" style="max-width:30em;">
-						<div class="card-body p-0">
-							<div class="row" style="display: contents!important;">
-								<div class="col-lg-6" style="max-width:30em;">
-									<div class="p-5">
+								<div id="loginwindow">
+									<div id="logincontent">
 										<div>
 											<h1 class="h4 text-gray-900 mb-4" style="margin-left:0.5em;">
 												<?php 
@@ -51,11 +45,11 @@
 											<p style="margin-left:0.8em;"><?php echo $this->lang->line('register_new_account');?></p>
 											<div class="form-group">
 												<label for="inputEmail" class="sr-only"> <?php echo $this->lang->line('first_name');?> </label>
-												<input type="text" name="first_name" class="form-control" placeholder="<?php echo $this->lang->line('first_name');?>" autofocus>
+												<input type="text" id="inputFirstname" name="first_name" class="form-control" placeholder="<?php echo $this->lang->line('first_name');?>" autofocus>
 											</div>
 											<div class="form-group">
 												<label for="inputEmail" class="sr-only"> <?php echo $this->lang->line('last_name');?> </label>
-												<input type="text" name="last_name" class="form-control" placeholder="<?php echo $this->lang->line('last_name');?>" autofocus>
+												<input type="text" id="inputLastname" name="last_name" class="form-control" placeholder="<?php echo $this->lang->line('last_name');?>" autofocus>
 											</div>
 											<div class="form-group">
 												<label for="inputEmail" class="sr-only"> <?php echo $this->lang->line('email_address');?> </label>
@@ -109,7 +103,7 @@
 												} 
 												?>
 											</div>
-											<button type="submit" class="btn btn-primary btn-user btn-block" style="margin-left:0px!important;"><?php echo $this->lang->line('submit');?></button>
+											<button type="submit" class="btn btn-primary btn-user btn-block" style="margin-left:0px!important;"><?php echo $this->lang->line('register');?></button>
 											<a href="<?php echo site_url('login');?>" class="btn btn-primary btn-user btn-block btn-login"><?php echo $this->lang->line('to_login');?></a>
 										</form>		 
 										<hr>

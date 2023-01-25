@@ -9,21 +9,14 @@
 		<title><?php echo $this->lang->line('savsoft_quiz');?></title>		
 		<!-- Custom fonts for this template-->
 		<link href="<?php echo base_url();?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-		<link href="<?php echo base_url(); ?>css/font/font.css" rel="stylesheet">		
+		<link href="<?php echo base_url(); ?>css/font/font.css" rel="stylesheet">
+		<link href="<?php echo base_url(); ?>css/style.css" rel="stylesheet">		
 		<!-- Custom styles for this template-->
 		<link href="<?php echo base_url();?>css/sb-admin-2.min.css" rel="stylesheet">
 	</head>	
 	<body class="bg-gradient-primary">
-		<div class="container">		
-			<!-- Outer Row -->
-			<div class="row justify-content-center">
-				<div class="col-xl-10 col-lg-12 col-md-9">
-					<div class="card o-hidden border-0 shadow-lg my-5" style="width:30em;">
-						<div class="card-body p-0">						
-							<!-- Nested Row within Card Body -->
-							<div class="row">
-								<div class="col-lg-6" style="max-width:30em;width:30em;">
-									<div class="p-5" style="max-width: 30em;width: 30em;">
+								<div id="loginwindow" class="text-center">
+									<div id="logincontent">
 										<div class="text-center">
 											<?php 
 											$hquery=$this->db->query(" select * from savsoftquiz_setting where setting_name='App_Name' || setting_name='App_title' order by setting_id asc "); 
@@ -39,7 +32,7 @@
 												?> 
 											</h1>
 										</div>
-										<form class="user"  method="post" action="<?php echo site_url('login/verifylogin');?>">	 
+										<form class="loginform" name="login" id="login" method="post" action="<?php echo site_url('login/verifylogin');?>">	 
 											<?php 
 											if($this->session->flashdata('message')){
 												?>
@@ -50,10 +43,10 @@
 											}
 											?>	
 											<div class="form-group">
-												<input type="email" name="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="<?php echo $this->lang->line('email_address');?>">
+												<input type="email" name="email" class="form-control form-control-user" id="username" aria-describedby="emailHelp" placeholder="<?php echo $this->lang->line('email_address');?>">
 											</div>
 											<div class="form-group">
-												<input type="password" name="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="<?php echo $this->lang->line('password');?>">
+												<input type="password" name="password" class="form-control form-control-user" id="password" placeholder="<?php echo $this->lang->line('password');?>">
 											</div>
 											<div class="form-group"></div>
 											<button type="submit" class="btn btn-primary btn-user btn-block btn-submit btn-left"><?php echo $this->lang->line('login');?></button>                 
@@ -75,13 +68,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>		
-		<!-- Bootstrap core JavaScript-->
+										<!-- Bootstrap core JavaScript-->
 		<script src="<?php echo base_url();?>vendor/jquery/jquery.min.js"></script>
 		<script src="<?php echo base_url();?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>		
 		<!-- Core plugin JavaScript-->
