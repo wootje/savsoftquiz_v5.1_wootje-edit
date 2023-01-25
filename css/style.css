@@ -435,6 +435,9 @@ h1, h2, h3, h4, h5 {
   -webkit-touch-callout:none!important;
   -khtml-user-select: none!important;
   user-select:none!important;
+  user-drag: none!important;
+  -webkit-user-drag: none!important;
+  -webkit-user-select: none!important;
 }
 
 .sidebar-brand-text.mx-3 {
