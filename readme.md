@@ -14,6 +14,8 @@ I'm planning to simplify the tool so everyone can use it.
 - Beautified some code
 - New SQL import file
 - Imported external CSS
+- Added CSS code for mobile users
+- Restyled all buttons so the text is easier to read
 <br>
 <br>
 <strong>To do:</strong><br>
