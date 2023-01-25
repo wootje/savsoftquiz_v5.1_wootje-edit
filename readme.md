@@ -14,12 +14,13 @@ I'm planning to simplify the tool so everyone can use it.
 - Rebuild register page
 - Added redirects to register process so the user won't have to navigate manually
 - Beautified/reforatted most of the code so it's mmuch easier to read
-- New SQL import file - removed all unnecessary files
+- New SQL import file - removed all unnecessary data
 - Imported all external CSS code - not depended on external platforms any more
 - Added CSS code for mobile users
 - Restyled all buttons so the text is easier to read
 - Added CSS code to render all content - text & images look much better now
 - Restyled the 'add' and 'edit' question pages
+- Configured uploading images to upload to "/img_upload" foler by default (wann't configured by default)
 - Fixed bugs
 - A lot of random restyling
 <br>
@@ -30,7 +31,7 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <br>
-The text editor blends into the skin after restyling:
+<strong>The text editor blends into the skin after restyling:</strong>
 <br>
 <br>
 <img src="/screenshots/screenshot1.png"></img>
