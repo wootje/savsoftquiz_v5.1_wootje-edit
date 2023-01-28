@@ -288,9 +288,9 @@ padding:5px;
 }
 
 
-
-
-
+.rqn div div b, .rqn div p, .rqn div div p, .rqn div b, .rqn div div {
+    text-shadow: 0 0 1px black;
+}
 
 
 
