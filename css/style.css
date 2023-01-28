@@ -575,6 +575,8 @@ h1, h2, h3, h4, h5 {
 .btn {
     	padding-top: 5px!important;
     	padding-bottom: 4px!important;
+	margin-top: 2px;
+       	margin-bottom: 2px;
 }
 
 .btn-primary {
@@ -592,8 +594,7 @@ h1, h2, h3, h4, h5 {
 
 .btn-default {
 	border-color: #01689b!important;
-	margin-top: 2px;
-       	margin-bottom: 2px;
+
 }
 .btn-default:hover,
 .btn-default:focus {
