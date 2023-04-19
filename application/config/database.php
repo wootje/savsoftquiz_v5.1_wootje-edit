@@ -1,8 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
- 
 include('sq_config.php');
-
 /*
 | -------------------------------------------------------------------
 | DATABASE CONNECTIVITY SETTINGS
@@ -74,9 +72,8 @@ include('sq_config.php');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-
 $db['default'] = array(
-	'dsn'	=> '',
+	'dsn' => '',
 	'hostname' => $sq_hostname,
 	'username' => $sq_dbusername,
 	'password' => $sq_dbpassword,
@@ -96,12 +93,8 @@ $db['default'] = array(
 	'failover' => array(),
 	'save_queries' => TRUE
 );
-
-
-
-
 $db['serverdb'] = array(
-	'dsn'	=> '',
+	'dsn' => '',
 	'hostname' => $sq_hostname,
 	'username' => $sq_dbusername,
 	'password' => $sq_dbpassword,

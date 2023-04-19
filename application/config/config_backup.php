@@ -8,39 +8,24 @@ include('sq_config.php');
 | 
 */
 $config['base_url'] = $sq_base_url;
-
-
 // enable webcam js ( true or false )
-$config['webcam']=true;
-
- 
+$config['webcam'] = true;
 // google chart ( true or false )
-$config['google_chart']=true;
-
- 
+$config['google_chart'] = true;
 // Allow registration ( true or false )
-$config['user_registration']=true;
-
+$config['user_registration'] = true;
 // verify email address ( true or false )
-$config['verify_email']=true;
-
+$config['verify_email'] = true;
 // tinymce editor ( true or false )
-$config['tinymce']=true;
-
- 
-
-
+$config['tinymce'] = true;
 // enable or disable result email. use true or false
-$config['allow_result_email']=false;
-
+$config['allow_result_email'] = false;
 // email sending protocol mail or smtp
-$config['protocol']="mail";
-
+$config['protocol'] = "mail";
 /*
 | SMTP configuration to send email to user just after submitting quiz
 | This feature is under testing version, We are not responsible if it does not work with any devices or browsers.
 */
-
 // smtp hostname eg. smtp.gmail.com
 $config['smtp_hostname'] = "ssl://smtp.gmail.com";
 // smtp username
@@ -58,63 +43,42 @@ $config['newline'] = "\r\n";
 // email message content text of html. 
 // In html email make sure you don't have any relative links or relative image paths otherwise they will not work.
 $config['smtp_mailtype'] = "text";
-
-
 // activation email subject
 $config['activation_subject'] = "Action required to verify your account";
 // activation email message
 $config['activation_message'] = "Hi, \r\n Thank you for registering with us. Please click below link to verify your email address.\r\n <a href='[verilink]'>[verilink]</a> \r\n or \r\n Copy below link and visit in browser \r\n [verilink] \r\n \r\n Thanks";
-
-
 // password reset email subject
 $config['password_subject'] = "Password Changed";
 // password reset email message
 $config['passsword_message'] = "Hi, \r\n Your New Password is: [new_password] \r\n Thanks";
-
 // Default result message
 // you can use below tags and system replace it with related variables. 
 // [username] [email] [first_name] [last_name] [score_obtained] [percentage_obtained] [result_status] [quiz_name] [current_date]
 $config['result_message'] = "Hi [last_name],\r\n \r\n  You have [result_status]  Quiz: '[quiz_name]' and obtained [percentage_obtained]% marks. To get more information please login to your quiz portal.\r\n  \r\n  Thanks";
 // result email subject
 $config['result_subject'] = "Result generated for quiz [quiz_name]";
-
-
-
-
 // email send from
-$config['fromemail']="noeply@gmailll.com";
+$config['fromemail'] = "noeply@gmailll.com";
 // from name
-$config['fromname']="Administrator - Quiz Portal";
-
-
-
-
+$config['fromname'] = "Administrator - Quiz Portal";
 // payment gateway
-$config['base_currency_prefix']="$";
-$config['base_currency_sufix']="USD";
-
-$config['paypal']="true";
-$config['paypal_receiver']="";
-$config['paypal_currency_prefix']="$";
-$config['paypal_currency_sufix']="USD";
+$config['base_currency_prefix'] = "$";
+$config['base_currency_sufix'] = "USD";
+$config['paypal'] = "true";
+$config['paypal_receiver'] = "";
+$config['paypal_currency_prefix'] = "$";
+$config['paypal_currency_sufix'] = "USD";
 // 1 unit of paypal currency = how many unit of base currency
-$config['paypal_conversion']="1";
-
-
-
-
-$config['payumoney']="true";
+$config['paypal_conversion'] = "1";
+$config['payumoney'] = "true";
 // payu merchant key
-$config['payu_merchant_key']="";
+$config['payu_merchant_key'] = "";
 // payu salt
-$config['payu_salt']="";
-$config['payumoney_currency_prefix']="Rs";
-$config['payumoney_currency_sufix']="INR";
+$config['payu_salt'] = "";
+$config['payumoney_currency_prefix'] = "Rs";
+$config['payumoney_currency_sufix'] = "INR";
 // 1 unit of payumoney currency = how many unit of base currency
-$config['payumoney_conversion']="66";
-
-
-
+$config['payumoney_conversion'] = "66";
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -126,7 +90,6 @@ $config['payumoney_conversion']="66";
 |
 */
 $config['index_page'] = 'index.php';
-
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
@@ -142,8 +105,7 @@ $config['index_page'] = 'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol']	= 'REQUEST_URI';
-
+$config['uri_protocol'] = 'REQUEST_URI';
 /*
 |--------------------------------------------------------------------------
 | URL suffix
@@ -155,7 +117,6 @@ $config['uri_protocol']	= 'REQUEST_URI';
 | https://codeigniter.com/user_guide/general/urls.html
 */
 $config['url_suffix'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | Default Language
@@ -166,15 +127,9 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
-
-
-
+$config['language'] = 'english';
 // no of rows per page
-$config['number_of_rows']="30";
-
-
- 
+$config['number_of_rows'] = "30";
 /*
 |--------------------------------------------------------------------------
 | Default Character Set
@@ -187,7 +142,6 @@ $config['number_of_rows']="30";
 |
 */
 $config['charset'] = 'UTF-8';
-
 /*
 |--------------------------------------------------------------------------
 | Enable/Disable System Hooks
@@ -198,7 +152,6 @@ $config['charset'] = 'UTF-8';
 |
 */
 $config['enable_hooks'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Class Extension Prefix
@@ -212,7 +165,6 @@ $config['enable_hooks'] = FALSE;
 |
 */
 $config['subclass_prefix'] = 'MY_';
-
 /*
 |--------------------------------------------------------------------------
 | Composer auto-loading
@@ -234,7 +186,6 @@ $config['subclass_prefix'] = 'MY_';
 |	autoloading (application/config/autoload.php)
 */
 $config['composer_autoload'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Allowed URL Characters
@@ -256,7 +207,6 @@ $config['composer_autoload'] = FALSE;
 |
 */
 $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
-
 /*
 |--------------------------------------------------------------------------
 | Enable Query Strings
@@ -287,7 +237,6 @@ $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
 $config['directory_trigger'] = 'd';
-
 /*
 |--------------------------------------------------------------------------
 | Error Logging Threshold
@@ -311,7 +260,6 @@ $config['directory_trigger'] = 'd';
 |
 */
 $config['log_threshold'] = 0;
-
 /*
 |--------------------------------------------------------------------------
 | Error Logging Directory Path
@@ -322,7 +270,6 @@ $config['log_threshold'] = 0;
 |
 */
 $config['log_path'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | Log File Extension
@@ -336,7 +283,6 @@ $config['log_path'] = '';
 |
 */
 $config['log_file_extension'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | Log File Permissions
@@ -348,7 +294,6 @@ $config['log_file_extension'] = '';
 |            integer notation (i.e. 0700, 0644, etc.)
 */
 $config['log_file_permissions'] = 0644;
-
 /*
 |--------------------------------------------------------------------------
 | Date Format for Logs
@@ -359,7 +304,6 @@ $config['log_file_permissions'] = 0644;
 |
 */
 $config['log_date_format'] = 'Y-m-d H:i:s';
-
 /*
 |--------------------------------------------------------------------------
 | Error Views Directory Path
@@ -370,7 +314,6 @@ $config['log_date_format'] = 'Y-m-d H:i:s';
 |
 */
 $config['error_views_path'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | Cache Directory Path
@@ -381,7 +324,6 @@ $config['error_views_path'] = '';
 |
 */
 $config['cache_path'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | Cache Include Query String
@@ -399,7 +341,6 @@ $config['cache_path'] = '';
 |
 */
 $config['cache_query_string'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Encryption Key
@@ -412,7 +353,6 @@ $config['cache_query_string'] = FALSE;
 |
 */
 $config['encryption_key'] = '';
-
 /*
 |--------------------------------------------------------------------------
 | Session Variables
@@ -471,7 +411,6 @@ $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Cookie Related Variables
@@ -487,12 +426,11 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix']	= '';
-$config['cookie_domain']	= '';
-$config['cookie_path']		= '/';
-$config['cookie_secure']	= FALSE;
-$config['cookie_httponly'] 	= FALSE;
-
+$config['cookie_prefix'] = '';
+$config['cookie_domain'] = '';
+$config['cookie_path'] = '/';
+$config['cookie_secure'] = FALSE;
+$config['cookie_httponly'] = FALSE;
 /*
 |--------------------------------------------------------------------------
 | Standardize newlines
@@ -506,7 +444,6 @@ $config['cookie_httponly'] 	= FALSE;
 |
 */
 $config['standardize_newlines'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Global XSS Filtering
@@ -520,7 +457,6 @@ $config['standardize_newlines'] = FALSE;
 |
 */
 $config['global_xss_filtering'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Cross Site Request Forgery
@@ -541,7 +477,6 @@ $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();
-
 /*
 |--------------------------------------------------------------------------
 | Output Compression
@@ -563,7 +498,6 @@ $config['csrf_exclude_uris'] = array();
 |
 */
 $config['compress_output'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Master Time Reference
@@ -576,7 +510,6 @@ $config['compress_output'] = FALSE;
 |
 */
 $config['time_reference'] = 'local';
-
 /*
 |--------------------------------------------------------------------------
 | Rewrite PHP Short Tags
@@ -590,7 +523,6 @@ $config['time_reference'] = 'local';
 |
 */
 $config['rewrite_short_tags'] = FALSE;
-
 /*
 |--------------------------------------------------------------------------
 | Reverse Proxy IPs
@@ -608,7 +540,6 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-
-$config['master_password']='savsoftquiz';
+$config['master_password'] = 'savsoftquiz';
 
 

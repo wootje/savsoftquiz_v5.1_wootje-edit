@@ -1,4 +1,4 @@
-<?php 
+<?php
 $lang['savsoft_quiz'] = "Quiz Tool";
 $lang['installation_process'] = "Installatieproces";
 $lang['installation_completed'] = "Installatie voltooid. Bezoek de basis-URL {base_url} om in te loggen.<br> <br> Standaard inloggegevens:<br> E-mail: ADMINEMAIL <br> Wachtwoord: ADMINPASS";
@@ -236,7 +236,7 @@ $lang['duration'] = "Duur (in min.)";
 $lang['time_over'] = "Tijd voorbij en quiz succesvol ingediend";
 $lang['remove_from_quiz'] = "Verwijderen uit quiz";
 $lang['add_question_into_quiz'] = "Vragen toevoegen aan quiz";
-$lang['no_questions_added'] = "Aantal toegevoegde vragen" ;
+$lang['no_questions_added'] = "Aantal toegevoegde vragen";
 $lang['paypal'] = "PayPal";
 $lang['payumoney'] = "Betaalgeld";
 $lang['proceed_payment_gateway'] = "Ga verder naar Payment Gateway";
@@ -378,7 +378,7 @@ $lang['group_addeduser'] = "Gebruiker toegevoegd!";
 $lang['group_owner_unjoin_error'] = "Groepsbeheerder kan de groep niet verlaten";
 $lang['urowner'] = "Beheerder";
 $lang['custom_message'] = "Bericht";
-$lang['accept_join'] ="Accepteren & meedoen";
+$lang['accept_join'] = "Accepteren & meedoen";
 $lang['reject'] = "Afwijzen";
 $lang['invitation_rejected'] = "Uitnodiging afgewezen";
 $lang['invitation_accepted'] = "Uitnodiging geaccepteerd";

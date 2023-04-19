@@ -1,4 +1,4 @@
-<?php 
+<?php
 //define("DOMPDF_TEMP_DIR", "/tmp");
 //define("DOMPDF_CHROOT", DOMPDF_DIR);
 //define("DOMPDF_UNICODE_ENABLED", false);
@@ -23,7 +23,6 @@
 //define("DOMPDF_LOG_OUTPUT_FILE", DOMPDF_FONT_DIR."log.htm");
 //define("DOMPDF_ENABLE_HTML5PARSER", true);
 //define("DOMPDF_ENABLE_FONTSUBSETTING", true);
-
 // DOMPDF authentication
 //define("DOMPDF_ADMIN_USERNAME", "user");
 //define("DOMPDF_ADMIN_PASSWORD", "password");
