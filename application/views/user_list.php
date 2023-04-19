@@ -59,11 +59,9 @@
 							echo $val['last_name']; ?></td>
 						<td><?php
 							echo $val['user_status']; ?></td>
-						<td>
-							<a href="<?php
+						<td><a href="<?php
 							echo site_url('notification/add_new/' . $val['uid']); ?>"><?php
-								echo $this->lang->line('send_notification'); ?></a>
-						</td>
+								echo $this->lang->line('send_notification'); ?></a></td>
 						<td>
 							<a href="<?php
 							echo site_url('user2/view_user/' . $val['uid']); ?>"><i class="fa fa-eye" title="View Profile"></i></a>

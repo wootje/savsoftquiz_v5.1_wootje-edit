@@ -17,7 +17,7 @@ if ($this->uri->segment(3) != 'ph') {
 				if ($ad['advertisement_code'] != "") {
 					echo $ad['advertisement_code'];
 				} else if ($ad['banner'] != '') { ?><a href="<?php
-				echo $ad['banner_link']; ?>" target="new_add">					<img src="<?php
+				echo $ad['banner_link']; ?>" target="new_add"><img src="<?php
 					echo base_url('upload/' . $ad['banner']); ?>" class="img-responsive"></a> <?php
 				}
 			}
@@ -66,7 +66,7 @@ if ($this->uri->segment(3) != 'ph') {
 	?>
 	<div class="container" style="text-align:right;">
 		Quiz Tool
-	</div>    </div>
+	</div></div>
 	<?php
 	if ($this->config->item('tinymce')) {
 		if ($this->uri->segment(2) != 'attempt') {
@@ -144,7 +144,7 @@ if ($this->uri->segment(3) != 'ph') {
 		}
 	}
 	?>
-	<div id="messages"></div>    <!-- duplicate question check -->
+	<div id="messages"></div><!-- duplicate question check -->
 	<div id="duplicate_question" style="display:none;position:fixed;z-index:1000;width:100%;bottom:0px;height:220px;overflow-y:auto;background:#212121;color:#ffffff;padding:8px;">
 		<a href="javascript:canceldupli();" style="float:right;"><i class="fa fa-times"></i></a>
 		<div id="duplicate_question2"></div>
@@ -180,7 +180,7 @@ if ($this->uri->segment(3) != 'ph') {
 				$('#duplicate_question').css('display', 'none');
 			}
 		}
-	</script>    <!-- dupllicate question check ends -->
+	</script><!-- dupllicate question check ends -->
 <?php
 } ?>
 </body></html>

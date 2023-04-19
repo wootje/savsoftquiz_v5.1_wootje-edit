@@ -33,12 +33,12 @@
 | Path to upload target folder, relative to domain name. NO TRAILING SLASH!
 | Example: if an image is acessed via http://www.example.com/images/somefolder/image.jpg, you should specify here:
 | 
-| $config['img_path'] = '/images/somefolder';
+| $config['img_path'] = '/img_upload';
 | 
 | -------------------------------------------------------------------*/
 
 	
-	$config['img_path'] = '/savsoftquiz_v5/upload'; // Relative to domain name
+	$config['img_path'] = '/img_upload'; // Relative to domain name
 	$config['upload_path'] = $_SERVER['DOCUMENT_ROOT'] . $config['img_path']; // Physical path. [Usually works fine like this]
 
 

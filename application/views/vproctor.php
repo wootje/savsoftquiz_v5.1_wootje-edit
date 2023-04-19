@@ -1,7 +1,8 @@
 <div class="row">
 	<div class="container">
 		<h3><?php
-			echo $this->lang->line('proctor'); ?></h3>        <br>
+			echo $this->lang->line('proctor'); ?></h3>
+		<br>
 		<?php
 		if ($rid != 0) {
 			$quid = $quiz['quid'];
@@ -21,7 +22,8 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<?php
-					echo "<b>" . $user['first_name'] . " " . $user['last_name'] . "</b>"; ?>
+					echo "<b>" . $user['first_name'] . " " . $user['last_name'] . "</b>";
+					?>
 				</div>
 				<div class="panel-body">
 					<?php

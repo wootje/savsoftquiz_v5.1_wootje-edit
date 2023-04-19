@@ -78,6 +78,11 @@
 <div class="container">
 	<?php
 	$logged_in = $this->session->userdata('logged_in');
+	?>
+
+
+
+	<?php
 	function ordinal($number)
 	{
 		$ends = array(
@@ -245,8 +250,8 @@ echo $this->lang->line('hello'); ?> <?php
 							echo $result['first_name']; ?>
 							<?php
 							echo $result['last_name']; ?>!</span> <?php
-						echo str_replace('{attempt_no}', ordinal($attempt), $this->lang->line('title_result')); ?>
-					</h3></center>
+						echo str_replace('{attempt_no}', ordinal($attempt), $this->lang->line('title_result')); ?> </h3>
+				</center>
 			</div>
 			<div class="col-lg-12">
 				<center>
@@ -283,8 +288,7 @@ echo $this->lang->line('hello'); ?> <?php
 					<p><?php
 						echo $this->lang->line('percentile_obtained'); ?></p>
 					<p style="color:#e39500;"><?php
-						echo substr(((($percentile[1] + 1) / $percentile[0]) * 100), 0, 5); ?>
-						%</p>
+						echo substr(((($percentile[1] + 1) / $percentile[0]) * 100), 0, 5); ?>%</p>
 				</div>
 				<div class="col-lg-2" style="text-align:center;">
 					<p><?php

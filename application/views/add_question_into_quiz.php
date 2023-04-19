@@ -93,11 +93,9 @@
 				foreach ($result as $key => $val) {
 					?>
 					<tr>
-						<td>
-							<a href="javascript:show_question_stat('<?php
+						<td><a href="javascript:show_question_stat('<?php
 							echo $val['qid']; ?>');">+</a> <?php
-							echo $val['qid']; ?>
-						</td>
+							echo $val['qid']; ?></td>
 						<td><?php
 							echo substr(strip_tags($val['question']), 0, 50); ?>
 							<span style="display:none;" id="stat-<?php

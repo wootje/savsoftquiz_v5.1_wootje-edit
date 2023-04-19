@@ -245,8 +245,7 @@ echo $this->lang->line('hello'); ?> <?php
 							echo $result['first_name']; ?>
 							<?php
 							echo $result['last_name']; ?>!</span> <?php
-						echo str_replace('{attempt_no}', $attempt, $this->lang->line('title_result')); ?>
-					</h3></center>
+						echo str_replace('{attempt_no}', $attempt, $this->lang->line('title_result')); ?> </h3></center>
 			</div>
 			<div class="col-lg-12">
 				<center>
@@ -283,8 +282,7 @@ echo $this->lang->line('hello'); ?> <?php
 					<p><?php
 						echo $this->lang->line('percentile_obtained'); ?></p>
 					<p style="color:#e39500;"><?php
-						echo substr(((($percentile[1] + 1) / $percentile[0]) * 100), 0, 5); ?>
-						%</p>
+						echo substr(((($percentile[1] + 1) / $percentile[0]) * 100), 0, 5); ?>%</p>
 				</div>
 				<div class="col-lg-2" style="text-align:center;">
 					<p><?php
@@ -311,15 +309,6 @@ echo $this->lang->line('hello'); ?> <?php
 						<a href="<?php
 						echo site_url('result/generate_certificate/' . $result['rid']); ?>" class="btn btn-warning printbtn" style="margin-top:10px;"><?php
 							echo $this->lang->line('download_certificate'); ?></a>
-						<?php
-					}
-					$logged_in = $this->session->userdata('logged_in');
-					$acp = explode(',', $logged_in['appointment']);
-					if (in_array('List', $acp)) {
-						?>
-						<a href="<?php
-						echo site_url('appointment/get_appointment/' . $result['inserted_by']); ?>" class="btn btn-primary printbtn" style="margin-top:10px;"><?php
-							echo $this->lang->line('appointment_with_expert'); ?></a>
 						<?php
 					}
 					?>
@@ -365,11 +354,9 @@ echo $this->lang->line('hello'); ?> <?php
 							?>
 							<tr>
 								<td colspan='2'> <?php
-									if ($result['photo'] != '') { ?>
-										<img                                        src="<?php
-										echo base_url('photo/' . $result['photo']); ?>"                                        id="photograph" ><?php
-									} ?>
-								</td>
+									if ($result['photo'] != '') { ?> <img src="<?php
+									echo base_url('photo/' . $result['photo']); ?>" id="photograph" ><?php
+									} ?></td>
 							</tr>
 							<?php
 						}
@@ -465,10 +452,8 @@ echo $this->lang->line('hello'); ?> <?php
 				<div class="panel panel-default">
 					<div class="panel-heading">
 						<button data-toggle="collapse" data-target="#warning" class="btn btn-info">Warnings</button>
-						<button data-toggle="collapse" data-target="#Captured" class="btn btn-info">Captured Images
-						</button>
-						<button data-toggle="collapse" data-target="#Scaptured" class="btn btn-info">Screen capturing
-						</button>
+						<button data-toggle="collapse" data-target="#Captured" class="btn btn-info">Captured Images</button>
+						<button data-toggle="collapse" data-target="#Scaptured" class="btn btn-info">Screen capturing</button>
 					</div>
 					<div id="warning" class="panel-body collapse">'
 						<?php
@@ -637,7 +622,7 @@ echo $this->lang->line('hello'); ?> <?php
 									echo base_url($file); ?>' style="width:600px;height:300px;" <?php
 									if ($j == 0) {
 										echo "class='poster'";
-									} ?> >                                    <!-- <b><?php
+									} ?> ><!-- <b><?php
 									echo $fname[2] . '-' . $fname[3] . '-' . $fname[4] . '-' . $fname[5] . '-' . $fname[6] . '-' . $fname[7]; ?></b> -->
 									<?php
 								}
@@ -727,8 +712,7 @@ echo $this->lang->line('hello'); ?> <?php
 								<td><?php
 									echo $cate_sco; ?></td>
 								<td><?php
-									echo secintomin($cia_tim_cate[0][$vk] + $cia_tim_cate[1][$vk] + $cia_tim_cate[2][$vk]); ?>
-									Min.
+									echo secintomin($cia_tim_cate[0][$vk] + $cia_tim_cate[1][$vk] + $cia_tim_cate[2][$vk]); ?> Min.
 								</td>
 								<td><?php
 									echo $no_C; ?></td>
@@ -754,8 +738,7 @@ echo $this->lang->line('hello'); ?> <?php
 								echo $result['score_obtained']; ?>
 							</th>
 							<th style="background:#337ab7;color:#ffffff;"><?php
-								echo secintomin($result['total_time']); ?>
-								Min. <?php
+								echo secintomin($result['total_time']); ?> Min. <?php
 								echo $this->lang->line('approx'); ?></th>
 							<th style="background:#337ab7;color:#ffffff;"><?php
 								echo $correct; ?></th>
@@ -790,7 +773,7 @@ echo $this->lang->line('hello'); ?> <?php
 								chart.draw(data, options);
 							}
 						</script>
-						<div id="chart_div" style="width: 800px; height: 500px;"></div>                        <!-- google chart starts -->
+						<div id="chart_div" style="width: 800px; height: 500px;"></div><!-- google chart starts -->
 						<script type="text/javascript">
 							google.load("visualization", "1", {packages: ["corechart"]});
 							google.setOnLoadCallback(drawChart);
@@ -803,7 +786,7 @@ echo $this->lang->line('hello'); ?> <?php
 								chart.draw(data, options);
 							}
 						</script>
-						<div id="chart_div2" style="width:800px; height: 500px;"></div>                        <!-- google chart ends -->
+						<div id="chart_div2" style="width:800px; height: 500px;"></div><!-- google chart ends -->
 						<?php
 					}
 					}
@@ -889,7 +872,7 @@ echo $this->lang->line('hello'); ?> <?php
 															}
 															?><?php
 															if (in_array($option['oid'], $save_ans)) {
-																echo '<b>' . $this->lang->line('your_answer') . '</b>:' . $option['q_option'];
+																echo '<b>' . $this->lang->line('your_answer') . '</b>: ' . $option['q_option'];
 															} ?><?php
 															$i += 1;
 														} else {
@@ -911,7 +894,7 @@ echo $this->lang->line('hello'); ?> <?php
 													<input type="hidden" name="question_type[]" id="q_type<?php
 													echo $qk; ?>" value="2">
 													<?php
-													echo '<b>' . $this->lang->line('your_answer') . '</b>:';
+													echo '<b>' . $this->lang->line('your_answer') . '</b>: ';
 													$i = 0;
 													$correct_options = array();
 													foreach ($options as $ok => $option) {
@@ -946,7 +929,7 @@ echo $this->lang->line('hello'); ?> <?php
 													?>
 													<div class="op">
 														<?php
-														echo '<b>' . $this->lang->line('your_answer') . '</b>:'; ?><?php
+														echo '<b>' . $this->lang->line('your_answer') . '</b>: '; ?><?php
 														echo $save_ans; ?>
 													</div>
 													<?php
@@ -1075,7 +1058,7 @@ echo $this->lang->line('hello'); ?> <?php
 												?>
 												<p><?php
 													if ($question['description'] != '') {
-														echo '<b>' . $this->lang->line('description') . '</b>:';
+														echo '<b>' . $this->lang->line('description') . '</b>: ';
 														echo $question['description'];
 													}
 													?></p>

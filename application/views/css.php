@@ -3,7 +3,8 @@
 		<form class="form-signin" method="post" action="<?php
 		echo site_url('dashboard/css'); ?>">
 			<h4><?php
-				echo $this->lang->line('custom_css'); ?></h4>            <br> <br>
+				echo $this->lang->line('custom_css'); ?></h4>
+			<br> <br>
 			<div class="form-group">
 				<textarea name="config_val" style="width:800px;height:500px;"><?php
 					echo $result; ?></textarea>

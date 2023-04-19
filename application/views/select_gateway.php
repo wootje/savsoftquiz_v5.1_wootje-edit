@@ -82,24 +82,21 @@ if ($quid == 0) {
 					}
 					if ($this->config->item('checkout') == 'true') {
 						?>
-						<li>
-							<a href="#2a" data-toggle="tab" onClick="showtab('#2a',this);" class="tabtitle"><?php
+						<li><a href="#2a" data-toggle="tab" onClick="showtab('#2a',this);" class="tabtitle"><?php
 								echo $this->lang->line('checkout'); ?></a>
 						</li>
 						<?php
 					}
 					if ($this->config->item('payumoney') == 'true') {
 						?>
-						<li>
-							<a href="#3a" data-toggle="tab" onClick="showtab('#3a',this);" class="tabtitle"><?php
+						<li><a href="#3a" data-toggle="tab" onClick="showtab('#3a',this);" class="tabtitle"><?php
 								echo $this->lang->line('payumoney'); ?></a>
 						</li>
 						<?php
 					}
 					if ($this->config->item('paytm') == 'true') {
 						?>
-						<li>
-							<a href="#4a" data-toggle="tab" onClick="showtab('#4a',this);" class="tabtitle"><?php
+						<li><a href="#4a" data-toggle="tab" onClick="showtab('#4a',this);" class="tabtitle"><?php
 								echo $this->lang->line('paytm'); ?></a>
 						</li>
 						<?php
@@ -120,8 +117,7 @@ if ($quid == 0) {
 							echo $this->lang->line('price_'); ?>: <?php
 							echo $this->config->item('paypal_currency_prefix'); ?><?php
 							echo $pricek * $this->config->item('paypal_conversion'); ?><?php
-							echo $this->config->item('paypal_currency_sufix'); ?>
-							<br>
+							echo $this->config->item('paypal_currency_sufix'); ?><br>
 							<form name="_xclick" action="https://www.<?php
 							echo $this->config->item('paypal_environment'); ?>paypal.com/cgi-bin/webscr" method="post">
 								<input type="hidden" name="cmd" value="_xclick">
@@ -160,8 +156,7 @@ if ($quid == 0) {
 							echo $this->lang->line('price_'); ?>: <?php
 							echo $this->config->item('checkout_currency_prefix'); ?><?php
 							echo $pricek * $this->config->item('checkout_conversion'); ?><?php
-							echo $this->config->item('checkout_currency_sufix'); ?>
-							<br>
+							echo $this->config->item('checkout_currency_sufix'); ?><br>
 							<form action="https://<?php
 							echo $this->config->item('checkout_environment'); ?>2checkout.com/checkout/purchase" method='post'>
 								<input type='hidden' name='sid' value="<?php
@@ -198,8 +193,7 @@ if ($quid == 0) {
 							echo $this->lang->line('price_'); ?>: <?php
 							echo $this->config->item('payumoney_currency_prefix'); ?><?php
 							echo $group['price'] * $this->config->item('payumoney_conversion'); ?><?php
-							echo $this->config->item('payumoney_currency_sufix'); ?>
-							<br>
+							echo $this->config->item('payumoney_currency_sufix'); ?><br>
 							<?php
 							$pricepayu = $pricek * $this->config->item('payumoney_conversion');
 							// Merchant key here as provided by Payu
@@ -268,8 +262,7 @@ if ($quid == 0) {
 							echo $this->lang->line('price_'); ?>: <?php
 							echo $this->config->item('payumoney_currency_prefix'); ?><?php
 							echo $pricek * $this->config->item('payumoney_conversion'); ?><?php
-							echo $this->config->item('payumoney_currency_sufix'); ?>
-							<br>
+							echo $this->config->item('payumoney_currency_sufix'); ?><br>
 							<form method="post" action="<?php
 							echo PAYTM_TXN_URL ?>" name="f1">
 								<table border="1">

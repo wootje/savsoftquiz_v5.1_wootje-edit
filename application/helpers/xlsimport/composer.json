@@ -1,22 +1,12 @@
 {
 	"name": "nuovo/spreadsheet-reader",
 	"description": "Spreadsheet reader library for Excel, OpenOffice and structured text files",
-	"keywords": [
-		"spreadsheet",
-		"xls",
-		"xlsx",
-		"ods",
-		"csv",
-		"excel",
-		"openoffice"
-	],
+	"keywords": ["spreadsheet", "xls", "xlsx", "ods", "csv", "excel", "openoffice"],
 	"homepage": "https://github.com/nuovo/spreadsheet-reader",
 	"version": "0.5.6",
 	"time": "2013-09-04",
 	"type": "library",
-	"license": [
-		"MIT"
-	],
+	"license": ["MIT"],
 	"authors": [
 		{
 			"name": "Martins Pilsetnieks",
@@ -32,8 +22,6 @@
 		"ext-zip": "*"
 	},
 	"autoload": {
-		"classmap": [
-			"./"
-		]
+		"classmap": ["./"]
 	}
 }

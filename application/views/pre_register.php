@@ -33,8 +33,7 @@
 						echo base64_decode($v[1]); ?>: <?php
 						echo $this->config->item('base_currency_prefix'); ?>  <?php
 						echo base64_decode($v[2]); ?> <?php
-						echo $this->config->item('base_currency_sufix'); ?>
-						<a href="<?php
+						echo $this->config->item('base_currency_sufix'); ?> <a href="<?php
 						echo site_url('login/clearcartval/' . $v[0]); ?>"><i class="fa fa-trash" style="float:right;color:#666666;"></i></a>
 					</p>
 					<?php

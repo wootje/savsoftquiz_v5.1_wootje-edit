@@ -67,7 +67,7 @@
 								<div class="col-lg-6">
 									<div class="form-group">
 										<label for="inputEmail"><?php
-											echo $this->lang->line('paragraph') . ' : ' . $val; ?></label>
+											echo $this->lang->line('paragraph') ; ?></label>
 										<textarea name="paragraph<?php
 										echo $lno; ?>" class="form-control"><?php
 											echo $question['paragraph' . $lno]; ?></textarea>
@@ -88,7 +88,7 @@
 							<div class="col-lg-6">
 								<div class="form-group">
 									<label for="inputEmail"><?php
-										echo $this->lang->line('question') . ' : ' . $val; ?></label>
+										echo $this->lang->line('question'); ?></label>
 									<textarea name="question<?php
 									echo $lno; ?>" class="form-control"><?php
 										echo $question['question' . $lno]; ?></textarea>
@@ -105,7 +105,7 @@
 							<div class="col-lg-6">
 								<div class="form-group">
 									<label for="inputEmail"><?php
-										echo $this->lang->line('description') . ' : ' . $val; ?></label>
+										echo $this->lang->line('description'); ?></label>
 									<textarea name="description<?php
 									echo $lno; ?>" class="form-control"><?php
 										echo $question['description' . $lno]; ?></textarea>
@@ -129,16 +129,14 @@
 										<div class="form-group">
 											<label for="inputEmail"><?php
 												echo $this->lang->line('options'); ?> <?php
-												echo $key + 1; ?>) <?php
-												echo ' : ' . $la; ?></label> <br>
+												echo $key + 1; ?>)</label> <br>
 											<?php
 											if ($lkey == 0) {
-												?>
-												<input type="checkbox" name="score[]" value="<?php
+												?><input type="checkbox" name="score[]" value="<?php
 												echo $key; ?>" <?php
 												if ($val['score'] >= 0.1) {
 													echo 'checked';
-												} ?> > Select Correct Option <?php
+												} ?> > <?php echo $this->lang->line('correct');
 											} ?>
 											<br><textarea name="option<?php
 											echo $lno; ?>[]" class="form-control"><?php

@@ -44,26 +44,21 @@
 						<td><?php
 							echo $val['appointment_id']; ?></td>
 						<td><?php
-							echo $val['requested_by_name']; ?>
-							<br><?php
+							echo $val['requested_by_name']; ?> <br><?php
 							echo $this->lang->line('skype_id'); ?>: <?php
-							echo $val['requested_by_skype']; ?>
-						</td>
+							echo $val['requested_by_skype']; ?></td>
 						<td><?php
-							echo $val['appointed_to_name']; ?>
-							<br><?php
+							echo $val['appointed_to_name']; ?> <br><?php
 							echo $this->lang->line('skype_id'); ?>: <?php
-							echo $val['appointed_to_skype']; ?>
-						</td>
+							echo $val['appointed_to_skype']; ?></td>
 						<td><?php
 							echo $val['appointment_timing']; ?></td>
 						<td><?php
 							echo $val['appointment_status'];
 							if ($val['appointment_status'] == "Pending" && $logged_in['uid'] == $val['to_id']) {
-								?>  &nbsp;&nbsp;								<a href="<?php
+								?>  &nbsp;&nbsp;<a href="<?php
 								echo site_url('appointment/change_status/' . $val['appointment_id'] . '/Accepted'); ?>" class="btn btn-success btn-sm"><?php
-									echo $this->lang->line('accept'); ?></a>
-								<a href="<?php
+									echo $this->lang->line('accept'); ?></a><a href="<?php
 								echo site_url('appointment/change_status/' . $val['appointment_id'] . '/Rejected'); ?>" class="btn btn-danger btn-sm"><?php
 									echo $this->lang->line('reject'); ?></a>
 								<?php

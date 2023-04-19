@@ -31,14 +31,13 @@
 							echo base_url('upload/' . $result['attachment']); ?>" type="video/ogg">
 							Your browser does not support the video tag.
 						</video>
-						<?php
-					} else {
-						?>
+					<?php
+					} else { ?>
 						<a href="<?php
 						echo base_url('upload/' . $result['attachment']); ?>" target="study_material">Download <?php
 							echo $this->lang->line('attachment'); ?></a>
-						<?php
-					}
+					<?php
+					} ?><?php
 				}
 				?>
 			</div>
@@ -57,6 +56,7 @@
 						echo $group['group_name'];
 						echo ", ";
 					}
+					?><?php
 				} ?>
 			</div>
 		</div>

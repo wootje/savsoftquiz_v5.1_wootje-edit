@@ -17,13 +17,11 @@
 						}
 						?>
 						<div class="form-group">
-							<?php
-							echo $this->lang->line('multiple_choice_single_answer'); ?>
+							<h4 style="font-weight:700;margin-left:0px;"><?php echo $this->lang->line('multiple_choice_single_answer'); ?></h4>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_category'); ?></label>
-							<select class="form-control" name="cid">
+							<label><b><?php echo $this->lang->line('select_category'); ?></b></label>
+							<select class="form-control" name="cid" style="margin-left:20px;">
 								<?php
 								foreach ($category_list as $key => $val) {
 									?>
@@ -36,9 +34,8 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_level'); ?></label>
-							<select class="form-control" name="lid">
+							<label><b><?php echo $this->lang->line('select_level'); ?></b></label>
+							<select class="form-control" name="lid" style="margin-left:20px;">
 								<?php
 								foreach ($level_list as $key => $val) {
 									?>
@@ -60,8 +57,7 @@
 								?>
 								<div class="col-lg-6">
 									<div class="form-group">
-										<label for="inputEmail"><?php
-											echo $this->lang->line('paragraph') . ' : ' . $val; ?></label>
+										<label for="inputEmail"><b><?php echo $this->lang->line('paragraph'); ?></b></label>
 										<textarea name="paragraph<?php
 										echo $lno; ?>" class="form-control"><?php
 											if (isset($qp)) {
@@ -83,8 +79,7 @@
 							?>
 							<div class="col-lg-6">
 								<div class="form-group">
-									<label for="inputEmail"><?php
-										echo $this->lang->line('question') . ' : ' . $val; ?></label>
+									<label for="inputEmail"><b><?php echo $this->lang->line('question'); ?></b></label>
 									<textarea name="question<?php
 									echo $lno; ?>" class="form-control"></textarea><br>
 									<span style="color:red; font-size:12px;"><a href="javascript:toogleuperror();">Getting error while uploading image?</a> "The upload path does not appear to be valid"</span>
@@ -109,8 +104,7 @@
 							?>
 							<div class="col-lg-6">
 								<div class="form-group">
-									<label for="inputEmail"><?php
-										echo $this->lang->line('description') . ' : ' . $val; ?></label>
+									<label for="inputEmail"><b><?php echo $this->lang->line('description'); ?></label>
 									<textarea name="description<?php
 									echo $lno; ?>" class="form-control"></textarea>
 								</div>
@@ -133,21 +127,18 @@
 										<div class="form-group">
 											<label for="inputEmail"><?php
 												echo $this->lang->line('options'); ?> <?php
-												echo $i; ?>) <?php
-												echo ' : ' . $val; ?></label> <br>
+												echo $i; ?>)</label> <br>
 											<?php
 											if ($lkey == 0) {
-												?>
-												<input type="radio" name="score" value="<?php
+												?>    <input type="radio" name="score" value="<?php
 												echo $i - 1; ?>" <?php
 												if ($i == 1) {
 													echo 'checked';
-												} ?> > Select Correct Option
+												} ?> > <?php echo $this->lang->line('correct'); ?>
 											<?php
 											} else { ?><?php
 											}
-											?>
-											<br><textarea name="option<?php
+											?> <br><textarea name="option<?php
 											echo $lno; ?>[]" class="form-control"></textarea>
 										</div>
 									</div>
@@ -158,7 +149,7 @@
 						}
 						?>
 						<input type="hidden" name="parag" id="parag" value="0">
-						<button class="btn btn-default" type="submit"><?php
+						<button class="btn btn-default" type="submit" style="margin-bottom:30px;"><?php
 							echo $this->lang->line('submit'); ?></button>
 						<?php
 						if ($para == 1) {

@@ -92,7 +92,7 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 						?>
 						<a href="javascript:switch_category('cat_<?php
 						echo $cat_key; ?>');" class="btn btn-info" style="cursor:pointer;"><?php
-							echo $category; ?></a>						<input type="hidden" id="cat_<?php
+							echo $category; ?></a><input type="hidden" id="cat_<?php
 						echo $cat_key; ?>" value="<?php
 						echo getfirstqn($cat_key, $category_range); ?>">
 						<?php
@@ -284,8 +284,7 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 									<?php
 									echo $this->lang->line('answer'); ?> <br>
 									<?php
-									echo $this->lang->line('word_counts'); ?>
-									<span id="char_count<?php
+									echo $this->lang->line('word_counts'); ?> <span id="char_count<?php
 									echo $qk; ?>">0</span>
 									<div style="display:none;" class=" green_option<?php
 									echo $qk; ?>">
@@ -421,20 +420,17 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 					<tr>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#449d44;">&nbsp;</div> <?php
-							echo $this->lang->line('Answered'); ?>
-						</td>
+							echo $this->lang->line('Answered'); ?>  </td>
 					</tr>
 					<tr>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#c9302c;">&nbsp;</div> <?php
-							echo $this->lang->line('UnAnswered'); ?>
-						</td>
+							echo $this->lang->line('UnAnswered'); ?>  </td>
 					</tr>
 					<tr>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#212121;">&nbsp;</div> <?php
-							echo $this->lang->line('Not-visited'); ?>
-						</td>
+							echo $this->lang->line('Not-visited'); ?>  </td>
 					</tr>
 				</table>
 				<div style="clear:both;"></div>

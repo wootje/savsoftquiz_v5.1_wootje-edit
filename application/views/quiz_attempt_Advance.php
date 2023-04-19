@@ -150,8 +150,7 @@ echo base_url('js/jquery.mobile-1.4.5.min.js'); ?>"></script>
 										echo $qk . '-' . $i; ?>');">
 											<table>
 												<tr>
-													<td>
-														<input type="radio" name="answer[<?php
+													<td><input type="radio" name="answer[<?php
 														echo $qk; ?>][]" id="answer_value<?php
 														echo $qk . '-' . $i; ?>" value="<?php
 														echo $option['oid']; ?>" <?php
@@ -191,8 +190,7 @@ echo base_url('js/jquery.mobile-1.4.5.min.js'); ?>"></script>
 											echo $qk . '-' . $i; ?>');"></div>
 											<table>
 												<tr>
-													<td>
-														<input type="checkbox" name="answer[<?php
+													<td><input type="checkbox" name="answer[<?php
 														echo $qk; ?>][]" id="answer_value<?php
 														echo $qk . '-' . $i; ?>" value="<?php
 														echo $option['oid']; ?>" <?php
@@ -251,8 +249,7 @@ echo base_url('js/jquery.mobile-1.4.5.min.js'); ?>"></script>
 									<?php
 									echo $this->lang->line('answer'); ?> <br>
 									<?php
-									echo $this->lang->line('word_counts'); ?>
-									<span id="char_count<?php
+									echo $this->lang->line('word_counts'); ?> <span id="char_count<?php
 									echo $qk; ?>">0</span> <textarea name="answer[<?php
 									echo $qk; ?>][]" id="answer_value<?php
 									echo $qk; ?>" style="width:100%;height:100%;" onKeyup="count_char(this.value,'char_count<?php
@@ -354,7 +351,7 @@ echo base_url('js/jquery.mobile-1.4.5.min.js'); ?>"></script>
 						?>
 						<a href="javascript:switch_category('cat_<?php
 						echo $cat_key; ?>');" class="btn btn-default btn-sm" style="cursor:pointer;color:#666666;"><?php
-							echo $category; ?></a>						<input type="hidden" id="cat_<?php
+							echo $category; ?></a><input type="hidden" id="cat_<?php
 						echo $cat_key; ?>" value="<?php
 						echo getfirstqn($cat_key, $category_range); ?>">
 						<?php
@@ -384,26 +381,22 @@ echo base_url('js/jquery.mobile-1.4.5.min.js'); ?>"></script>
 						<tr>
 							<td style="font-size:10px;">
 								<div class="qbtn" style="background:#449d44;width:20px;height:20px;">&nbsp;</div> <?php
-								echo $this->lang->line('Answered'); ?>
-							</td>
+								echo $this->lang->line('Answered'); ?>  </td>
 						</tr>
 						<tr>
 							<td style="font-size:10px;">
 								<div class="qbtn" style="background:#c9302c;width:20px;height:20px;">&nbsp;</div> <?php
-								echo $this->lang->line('UnAnswered'); ?>
-							</td>
+								echo $this->lang->line('UnAnswered'); ?>  </td>
 						</tr>
 						<tr>
 							<td style="font-size:10px;">
 								<div class="qbtn" style="background:#ec971f;width:20px;height:20px;">&nbsp;</div> <?php
-								echo $this->lang->line('Review-Later'); ?>
-							</td>
+								echo $this->lang->line('Review-Later'); ?>  </td>
 						</tr>
 						<tr>
 							<td style="font-size:10px;">
 								<div class="qbtn" style="background:#212121;width:20px;height:20px;">&nbsp;</div> <?php
-								echo $this->lang->line('Not-visited'); ?>
-							</td>
+								echo $this->lang->line('Not-visited'); ?>  </td>
 						</tr>
 					</table>
 					<div style="clear:both;"></div>

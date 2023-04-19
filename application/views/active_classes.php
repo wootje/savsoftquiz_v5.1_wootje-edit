@@ -22,7 +22,7 @@
 						if (in_array('All', explode(',', $logged_in['setting']))) {
 							?>
 							Live Classroom is a place where you can post live content  (text, image or any other attachments) to users of selected groups.
-							<br>                            Users can ask any question by posting comments and you (Admin) have power to publish, delete and answer that comments.                            Closing any class will disable new content or comments.
+							<br>Users can ask any question by posting comments and you (Admin) have power to publish, delete and answer that comments.Closing any class will disable new content or comments.
 							<?php
 						}
 						?>
@@ -31,6 +31,8 @@
 						if ($this->session->flashdata('message')) {
 							echo $this->session->flashdata('message');
 						}
+						?>
+						<?php
 						if (in_array('All', explode(',', $logged_in['setting']))) {
 							?>
 							<a href="<?php
@@ -39,8 +41,8 @@
 						}
 						?>
 						<a href="<?php
-						echo site_url('liveclass/closed_classes/'); ?>" class="btn btn-warning">Closed classes</a> <br>
-						<br>
+						echo site_url('liveclass/closed_classes/'); ?>" class="btn btn-warning">Closed classes</a>
+						<br><br>
 						<table class="table table-hover">
 							<thead>
 							<tr>
@@ -50,12 +52,14 @@
 								<th>Action</th>
 							</tr>
 							</thead>
-							<tbody>
+							</tbody>
 							<?php
 							if ($result == false) {
 								?>
 								<tr>
-									<td colspan="5">No active or upcoming class!</td>
+									<td colspan="5">
+										No active or upcoming class!
+									</td>
 								</tr>
 								<?php
 							} else {
@@ -74,8 +78,9 @@
 												?>
 												<a href="<?php
 												echo site_url('liveclass/live_streaming/' . $row['class_id'] . '/' . $row['SQLc_session_id']); ?>" class="glyphicon glyphicon-facetime-video btn btn-primary "> Live</a>
-												<?php
-											}
+											<?php
+											} ?>
+											<?php
 											if (in_array('All', explode(',', $logged_in['setting']))) {
 												?>
 												<a href="<?php
@@ -89,6 +94,8 @@
 												echo site_url('liveclass/attempt/' . $row['class_id']); ?>" class="btn btn-warning">Attend</a>
 												<?php
 											}
+											?>
+											<?php
 											if (in_array('All', explode(',', $logged_in['setting']))) {
 												?>
 												<a href="javascript: if(confirm('Do you really want to remove this class?')){ window.location='<?php
@@ -104,8 +111,7 @@
 								}
 							}
 							?>
-							</tbody>
-						</table>
+							</tbody></table>
 					</div>
 				</div>
 				<!-- .panel-body -->
@@ -116,13 +122,15 @@
 	</div>
 	<?php
 	if (in_array('All', explode(',', $logged_in['setting']))) {
+		?><?php
 	}
+	?>
+	<?php
 	if (($limit - ($this->config->item('number_of_rows'))) >= 0) {
 		$back = $limit - ($this->config->item('number_of_rows'));
 	} else {
 		$back = '0';
-	}
-	?>
+	} ?>
 	<a href="<?php
 	echo site_url('liveclass/index/' . $back); ?>" class="btn btn-primary">Back</a> &nbsp;&nbsp;
 	<?php

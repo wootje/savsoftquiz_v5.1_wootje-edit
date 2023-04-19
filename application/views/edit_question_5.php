@@ -14,18 +14,15 @@
 						}
 						?>
 						<div class="form-group">
-							<?php
-							echo $this->lang->line('long_answer'); ?>
+							<h4 style="font-weight:700;margin-left:0px;"><?php echo $this->lang->line('long_answer'); ?></h4>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_category'); ?></label>
+							<label><b><?php echo $this->lang->line('select_category'); ?></b></label>
 							<select class="form-control" name="cid">
 								<?php
 								foreach ($category_list as $key => $val) {
 									?>
-									<option value="<?php
-									echo $val['cid']; ?>" <?php
+									<option value="<?php echo $val['cid']; ?>" <?php
 									if ($question['cid'] == $val['cid']) {
 										echo 'selected';
 									} ?> ><?php
@@ -36,8 +33,7 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_level'); ?></label>
+							<label><b><?php echo $this->lang->line('select_level'); ?></b></label>
 							<select class="form-control" name="lid">
 								<?php
 								foreach ($level_list as $key => $val) {
@@ -66,19 +62,15 @@
 						}
 						?>
 						<div class="form-group">
-							<label for="inputEmail"><?php
-								echo $this->lang->line('question'); ?></label>
+							<label for="inputEmail"><b><?php echo $this->lang->line('question'); ?><b></label>
 							<textarea name="question" class="form-control"><?php
 								echo $question['question']; ?></textarea>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail"><?php
-								echo $this->lang->line('description'); ?></label>
-							<textarea name="description" class="form-control"><?php
-								echo $question['description']; ?></textarea>
+							<label for="inputEmail"><b><?php echo $this->lang->line('description'); ?><b></label>
+							<textarea name="description" class="form-control"><?php echo $question['description']; ?></textarea>
 						</div>
-						<button class="btn btn-default" type="submit"><?php
-							echo $this->lang->line('submit'); ?></button>
+						<button class="btn btn-default" type="submit" style="margin-top:15px;margin-bottom:40px;"><?php echo $this->lang->line('submit'); ?></button>
 					</div>
 				</div>
 			</div>

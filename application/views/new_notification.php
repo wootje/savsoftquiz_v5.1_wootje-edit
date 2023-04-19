@@ -37,7 +37,7 @@
 							<?php
 							echo $this->lang->line('send_to'); ?>: <?php
 							echo $this->lang->line('all_users'); ?>
-							<input type="hidden" required name="uid" value="0">                            <br><br>
+							<input type="hidden" required name="uid" value="0">			<br><br>
 							<?php
 						} else {
 							$nq = $this->db->query("select * from savsoft_users where uid='$tuid'");
@@ -47,7 +47,7 @@
 							<?php
 							echo $nuser['first_name']; ?><?php
 							echo $nuser['last_name']; ?> (# <?php
-							echo $nuser['uid']; ?>)							<br><br>
+							echo $nuser['uid']; ?>)<br><br>
 							<input type="hidden" required name="notification_to[]" value="<?php
 							echo $nuser['web_token']; ?>">
 							<input type="hidden" required name="notification_to[]" value="<?php

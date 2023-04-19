@@ -13,37 +13,29 @@
 				$logged_in = $this->session->userdata('logged_in');
 				$acp = explode(',', $logged_in['social_group']);
 				if (!in_array($sg_id, $joined)) { ?>
-					<li class="list-group-item text-muted">
-						<a href="<?php
-						echo site_url('social_group/join/' . $sg_id); ?>" class="btn btn-primary btn-block"><i>class="fa fa-plus"></i> <?php
-							echo $this->lang->line('join'); ?>
-						</a>
-					</li>
+					<li class="list-group-item text-muted"><a href="<?php
+						echo site_url('social_group/join/' . $sg_id); ?>" class="btn btn-primary btn-block"><i class="fa fa-plus"></i> <?php
+							echo $this->lang->line('join'); ?></a></li>
 				<?php
 				} else if ($group['created_by'] != $logged_in['uid']) {
 					?>
 					<li class="list-group-item text-muted">
 						<a href="<?php
 						echo site_url('social_group/unjoin/' . $sg_id); ?>" class="btn btn-primary btn-block"> <?php
-							echo $this->lang->line('unjoin'); ?></a>
-					</li>
-					<?php
+							echo $this->lang->line('unjoin'); ?></a></li>
+				<?php
 				} else {
 					?>
-					<li class="list-group-item text-muted">
-						<a href="#" class="btn btn-primary btn-block"><?php
-							echo $this->lang->line('urowner2'); ?></a>
-					</li>
+					<li class="list-group-item text-muted"><a href="#" class="btn btn-primary btn-block"><?php
+							echo $this->lang->line('urowner2'); ?></a></li>
 					<?php
 				}
 				$acp = explode(',', $logged_in['social_group']);
 				if (in_array('Invite', $acp)) {
 					?>
-					<li class="list-group-item text-muted">
-						<a href="<?php
+					<li class="list-group-item text-muted"><a href="<?php
 						echo site_url('social_group/view/' . $sg_id . '/#invite'); ?>" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal1"> <?php
-							echo $this->lang->line('invite'); ?></a>
-					</li>
+							echo $this->lang->line('invite'); ?></a></li>
 					<?php
 				}
 				if (in_array('Add_other', $acp)) {
@@ -51,8 +43,7 @@
 					<li class="list-group-item text-muted">
 						<a href="<?php
 						echo site_url('social_group/view/' . $sg_id . '/#member'); ?>" class="btn btn-primary btn-block" data-toggle="modal" data-target="#myModal2"> <?php
-							echo $this->lang->line('add_user'); ?></a>
-					</li>
+							echo $this->lang->line('add_user'); ?></a></li>
 					<?php
 				}
 				?>
@@ -64,15 +55,13 @@
 				<?php
 				foreach ($members as $k => $val) {
 					?>
-					<div style="border-bottom:1px solid #dddddd;padding:2px;">
-						<a href="#"><?php
+					<div style="border-bottom:1px solid #dddddd;padding:2px;"><a href="#"><?php
 							echo $val['first_name'] . ' ' . $val['last_name']; ?></a>
 						<?php
 						$acp = explode(',', $logged_in['social_group']);
 						if (in_array('Remove', $acp)) {
 							if ($group['created_by'] == $logged_in['uid']) {
-								?>
-								<a href="<?php
+								?>   <a href="<?php
 								echo site_url('social_group/remove_user/' . $sg_id . '/' . $val['uid']); ?>" style="float:right;">
 									<i class="fa fa-times"></i></a>
 								<?php
@@ -118,7 +107,7 @@
 				<?php
 			}
 			?>
-			<br> <br>
+			<br><br>
 			<?php
 			if (($limit - ($this->config->item('number_of_rows'))) >= 0) {
 				$back = $limit - ($this->config->item('number_of_rows'));
@@ -204,14 +193,18 @@
 	<?php
 	if($ac == 'invite'){
 	?>
+
 	$('#myModal1').modal('toggle');
+
 	<?php
 	}
 	?>
 	<?php
 	if($ac == 'adduser'){
 	?>
+
 	$('#myModal2').modal('toggle');
+
 	<?php
 	}
 	?>

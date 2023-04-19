@@ -30,7 +30,7 @@
 				?>
 				<a href="<?php
 				echo site_url('study_material/add_new'); ?>" class="btn btn-success"><?php
-					echo $this->lang->line('add_new'); ?></a>				<br><br>
+					echo $this->lang->line('add_new'); ?></a><br><br>
 				<?php
 			}
 			?>

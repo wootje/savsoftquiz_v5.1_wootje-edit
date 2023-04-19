@@ -176,8 +176,8 @@ echo base_url('js/select2.min.js'); ?>"></script>
 								<label for="inputEmail"><?php
 									echo $this->lang->line('question_selection'); ?></label> <br>
 								<input type="radio" name="question_selection" value="1"> <?php
-								echo $this->lang->line('automatically'); ?>
-								<br> <input type="radio" name="question_selection" value="0" checked> <?php
+								echo $this->lang->line('automatically'); ?><br>
+								<input type="radio" name="question_selection" value="0" checked> <?php
 								echo $this->lang->line('manually'); ?>
 							</div>
 							<div class="form-group">
@@ -191,8 +191,8 @@ echo base_url('js/select2.min.js'); ?>"></script>
 								<label for="inputEmail"><?php
 									echo $this->lang->line('generate_certificate'); ?></label> <br>
 								<input type="radio" name="gen_certificate" value="1"> <?php
-								echo $this->lang->line('yes'); ?>
-								<br> <input type="radio" name="gen_certificate" value="0" checked> <?php
+								echo $this->lang->line('yes'); ?><br>
+								<input type="radio" name="gen_certificate" value="0" checked> <?php
 								echo $this->lang->line('no'); ?>
 							</div>
 							<div class="form-group">

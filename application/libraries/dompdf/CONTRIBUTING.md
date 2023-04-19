@@ -45,10 +45,10 @@ Questions should be asked on the
 - If the problem can not be reproduced in any of the demos included in the
   dompdf distribution, please provide an HTML document that demonstrates
   the problem. There are a few options to show us your code:
-    - [JS Fiddle](http://jsfiddle.net/)
-    - [dompdf debug helper](http://eclecticgeek.com/dompdf/debug.php) (provided by @bsweeney)
-    - Include the HTML/CSS inside the bug report, with
-      [code highlighting](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-code).
+   - [JS Fiddle](http://jsfiddle.net/)
+   - [dompdf debug helper](http://eclecticgeek.com/dompdf/debug.php) (provided by @bsweeney)
+   - Include the HTML/CSS inside the bug report, with
+   [code highlighting](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-code).
 
 ## Contributing code
 
@@ -58,18 +58,16 @@ Questions should be asked on the
 - Make your changes
 - Add a simple test file in `www/test/`, with a comprehensive name.
 - Submit a pull request
-  ([how to create a pull request](https://help.github.com/articles/fork-a-repo))
+([how to create a pull request](https://help.github.com/articles/fork-a-repo))
 
 ### Coding standards
 
 - 2 spaces per indentation level, no tabs.
 - spaces inside `if` like this:
-
 ```php
 if ( $foo == "bar" ) {
   //
 }
 ```
-
 - booleans in lowercase
 - opening braces *always* on the same line

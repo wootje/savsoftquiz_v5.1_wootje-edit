@@ -17,12 +17,10 @@
 						}
 						?>
 						<div class="form-group">
-							<?php
-							echo $this->lang->line('match_the_column'); ?>
+							<h4 style="font-weight:700;margin-left:0px;"><?php echo $this->lang->line('match_the_column'); ?></h4>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_category'); ?></label>
+							<label><b><?php echo $this->lang->line('select_category'); ?></b></label>
 							<select class="form-control" name="cid">
 								<?php
 								foreach ($category_list as $key => $val) {
@@ -36,8 +34,7 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_level'); ?></label>
+							<label><b><?php echo $this->lang->line('select_level'); ?></b></label>
 							<select class="form-control" name="lid">
 								<?php
 								foreach ($level_list as $key => $val) {
@@ -54,8 +51,7 @@
 						if ($para == 1) {
 							?>
 							<div class="form-group">
-								<label for="inputEmail"><?php
-									echo $this->lang->line('paragraph'); ?></label>
+								<label for="inputEmail"><b><?php echo $this->lang->line('paragraph'); ?></b></label>
 								<textarea name="paragraph" class="form-control"><?php
 									if (isset($qp)) {
 										echo $qp['paragraph'];
@@ -65,13 +61,11 @@
 						}
 						?>
 						<div class="form-group">
-							<label for="inputEmail"><?php
-								echo $this->lang->line('question'); ?></label>
+							<label for="inputEmail"><b><?php echo $this->lang->line('question'); ?></b></label>
 							<textarea name="question" class="form-control"></textarea>
 						</div>
 						<div class="form-group">
-							<label for="inputEmail"><?php
-								echo $this->lang->line('description'); ?></label>
+							<label for="inputEmail"><b><?php echo $this->lang->line('description'); ?></b></label>
 							<textarea name="description" class="form-control"></textarea>
 						</div>
 						<?php
@@ -80,14 +74,14 @@
 							<div class="form-group">
 								<label for="inputEmail"><?php
 									echo $this->lang->line('options'); ?> <?php
-									echo $i; ?>)</label> <br> <input type="text" name="option[]" value=""> =
+									echo $i; ?>)</label> <br> <input type="text" style="margin-left:20px;" name="option[]" value=""> =
 								<input type="text" name="option2[]" value="">
 							</div>
 							<?php
 						}
 						?>
 						<input type="hidden" name="parag" id="parag" value="0">
-						<button class="btn btn-default" type="submit"><?php
+						<button class="btn btn-default" type="submit" style="margin-top:30px;margin-bottom:30px;"><?php
 							echo $this->lang->line('submit'); ?></button>
 						<?php
 						if ($para == 1) {

@@ -17,7 +17,7 @@
 		<a href="<?php
 		echo site_url('social_group/add_new'); ?>" class="btn btn-success"><?php
 			echo $this->lang->line('add_new'); ?><?php
-			echo $this->lang->line('social_group'); ?></a>		<br><br>
+			echo $this->lang->line('social_group'); ?></a><br><br>
 		<?php
 	}
 	?>
@@ -47,11 +47,9 @@
 			<div class="col-lg-3 col-md-3">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3>
-							<a href="<?php
+						<h3><a href="<?php
 							echo site_url('social_group/view/' . $val['sg_id'] . '/#member'); ?>"><?php
-								echo $val['sg_name']; ?></a>
-						</h3>
+								echo $val['sg_name']; ?></a></h3>
 						<span style="color:#666666;font-size:11px; "> <?php
 							echo $this->lang->line('created'); ?><?php
 							echo $val['created_date']; ?></span>
@@ -67,8 +65,7 @@
 						if (!in_array($val['sg_id'], $joined)) { ?>
 							<a href="<?php
 							echo site_url('social_group/join/' . $val['sg_id']); ?>" class="btn btn-primary"><i class="fa fa-plus"></i> <?php
-								echo $this->lang->line('join'); ?>
-							</a>
+								echo $this->lang->line('join'); ?></a>
 						<?php
 						} else if ($val['created_by'] != $logged_in['uid']) {
 							?>
@@ -156,7 +153,7 @@
 		if ($limit != 0) { ?>
 			<a href="<?php
 			echo site_url('social_group/index/' . $back); ?>" class="btn btn-primary"><?php
-				echo $this->lang->line('back'); ?></a>            &nbsp;&nbsp;
+				echo $this->lang->line('back'); ?></a>&nbsp;&nbsp;
 			<?php
 		}
 		$next = $limit + ($this->config->item('number_of_rows')); ?>

@@ -8,6 +8,8 @@ include('sq_config.php');
 | 
 */
 $config['base_url'] = $sq_base_url;
+
+
 /*
 |--------------------------------------------------------------------------
 | Index File
@@ -19,6 +21,7 @@ $config['base_url'] = $sq_base_url;
 |
 */
 $config['index_page'] = 'index.php';
+
 /*
 |--------------------------------------------------------------------------
 | URI PROTOCOL
@@ -34,7 +37,8 @@ $config['index_page'] = 'index.php';
 |
 | WARNING: If you set this to 'PATH_INFO', URIs will always be URL-decoded!
 */
-$config['uri_protocol'] = 'REQUEST_URI';
+$config['uri_protocol']	= 'REQUEST_URI';
+
 /*
 |--------------------------------------------------------------------------
 | URL suffix
@@ -46,6 +50,7 @@ $config['uri_protocol'] = 'REQUEST_URI';
 | https://codeigniter.com/user_guide/general/urls.html
 */
 $config['url_suffix'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | Default Language
@@ -56,9 +61,15 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language'] = 'english';
+$config['language']	= 'english';
+
+
+
 // no of rows per page
-$config['number_of_rows'] = "30";
+$config['number_of_rows']="30";
+
+
+ 
 /*
 |--------------------------------------------------------------------------
 | Default Character Set
@@ -71,6 +82,7 @@ $config['number_of_rows'] = "30";
 |
 */
 $config['charset'] = 'UTF-8';
+
 /*
 |--------------------------------------------------------------------------
 | Enable/Disable System Hooks
@@ -81,6 +93,7 @@ $config['charset'] = 'UTF-8';
 |
 */
 $config['enable_hooks'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Class Extension Prefix
@@ -94,6 +107,7 @@ $config['enable_hooks'] = FALSE;
 |
 */
 $config['subclass_prefix'] = 'MY_';
+
 /*
 |--------------------------------------------------------------------------
 | Composer auto-loading
@@ -115,6 +129,7 @@ $config['subclass_prefix'] = 'MY_';
 |	autoloading (application/config/autoload.php)
 */
 $config['composer_autoload'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Allowed URL Characters
@@ -136,6 +151,7 @@ $config['composer_autoload'] = FALSE;
 |
 */
 $config['permitted_uri_chars'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | Enable Query Strings
@@ -166,6 +182,7 @@ $config['enable_query_strings'] = FALSE;
 $config['controller_trigger'] = 'c';
 $config['function_trigger'] = 'm';
 $config['directory_trigger'] = 'd';
+
 /*
 |--------------------------------------------------------------------------
 | Error Logging Threshold
@@ -189,6 +206,7 @@ $config['directory_trigger'] = 'd';
 |
 */
 $config['log_threshold'] = 1;
+
 /*
 |--------------------------------------------------------------------------
 | Error Logging Directory Path
@@ -199,6 +217,7 @@ $config['log_threshold'] = 1;
 |
 */
 $config['log_path'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | Log File Extension
@@ -212,6 +231,7 @@ $config['log_path'] = '';
 |
 */
 $config['log_file_extension'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | Log File Permissions
@@ -223,6 +243,7 @@ $config['log_file_extension'] = '';
 |            integer notation (i.e. 0700, 0644, etc.)
 */
 $config['log_file_permissions'] = 0644;
+
 /*
 |--------------------------------------------------------------------------
 | Date Format for Logs
@@ -233,6 +254,7 @@ $config['log_file_permissions'] = 0644;
 |
 */
 $config['log_date_format'] = 'Y-m-d H:i:s';
+
 /*
 |--------------------------------------------------------------------------
 | Error Views Directory Path
@@ -243,6 +265,7 @@ $config['log_date_format'] = 'Y-m-d H:i:s';
 |
 */
 $config['error_views_path'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | Cache Directory Path
@@ -253,6 +276,7 @@ $config['error_views_path'] = '';
 |
 */
 $config['cache_path'] = '';
+
 /*
 |--------------------------------------------------------------------------
 | Cache Include Query String
@@ -270,6 +294,7 @@ $config['cache_path'] = '';
 |
 */
 $config['cache_query_string'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Encryption Key
@@ -282,6 +307,7 @@ $config['cache_query_string'] = FALSE;
 |
 */
 $config['encryption_key'] = 'savsoftquiz';
+
 /*
 |--------------------------------------------------------------------------
 | Session Variables
@@ -340,6 +366,7 @@ $config['sess_save_path'] = NULL;
 $config['sess_match_ip'] = FALSE;
 $config['sess_time_to_update'] = 300;
 $config['sess_regenerate_destroy'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Cookie Related Variables
@@ -355,11 +382,12 @@ $config['sess_regenerate_destroy'] = FALSE;
 |       'cookie_httponly') will also affect sessions.
 |
 */
-$config['cookie_prefix'] = '';
-$config['cookie_domain'] = '';
-$config['cookie_path'] = '/';
-$config['cookie_secure'] = FALSE;
-$config['cookie_httponly'] = FALSE;
+$config['cookie_prefix']	= '';
+$config['cookie_domain']	= '';
+$config['cookie_path']		= '/';
+$config['cookie_secure']	= FALSE;
+$config['cookie_httponly'] 	= FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Standardize newlines
@@ -373,6 +401,7 @@ $config['cookie_httponly'] = FALSE;
 |
 */
 $config['standardize_newlines'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Global XSS Filtering
@@ -386,6 +415,7 @@ $config['standardize_newlines'] = FALSE;
 |
 */
 $config['global_xss_filtering'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Cross Site Request Forgery
@@ -406,6 +436,7 @@ $config['csrf_cookie_name'] = 'csrf_cookie_name';
 $config['csrf_expire'] = 7200;
 $config['csrf_regenerate'] = TRUE;
 $config['csrf_exclude_uris'] = array();
+
 /*
 |--------------------------------------------------------------------------
 | Output Compression
@@ -427,6 +458,7 @@ $config['csrf_exclude_uris'] = array();
 |
 */
 $config['compress_output'] = FALSE;
+
 /*
 |--------------------------------------------------------------------------
 | Master Time Reference
@@ -439,6 +471,7 @@ $config['compress_output'] = FALSE;
 |
 */
 $config['time_reference'] = 'local';
+
 /*
 |--------------------------------------------------------------------------
 | Rewrite PHP Short Tags
@@ -452,12 +485,13 @@ $config['time_reference'] = 'local';
 |
 */
 $config['rewrite_short_tags'] = FALSE;
+
 /*
 | permission to write config file at front end by admin
 | 1 for  admin & super admin (if you have super admin version)
 | 2 for suadmin only  (if you have super admin version)
 */
-$config['frontend_write_admin'] = 1;
+$config['frontend_write_admin']=1;
 /*
 |--------------------------------------------------------------------------
 | Reverse Proxy IPs
@@ -475,182 +509,254 @@ $config['frontend_write_admin'] = 1;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
-if (isset($sq_dbname)) {
-	// Create connection
-	$conn = new mysqli($sq_hostname, $sq_dbusername, $sq_dbpassword, $sq_dbname);
-	// Check connection
-	if ($conn->connect_error) {
-		die("Connection failed: " . $conn->connect_error);
-	}
-	$sql = " select * from savsoftquiz_setting";
-	$result_config = $conn->query($sql);
-	$csetting = array();
-	foreach ($result_config as $k => $val) {
-		$csetting[$val['setting_name']] = $val['setting_value'];
-	}
-	// language direction ( ltr or rtl )
-	$config['direction'] = $csetting['Language_direction'];
-	// enable webcam js ( true or false )
-	$config['webcam'] = $csetting['Enable_web_cam'];
-	// google chart ( true or false )
-	$config['google_chart'] = $csetting['Enable_google_chart'];
-	// google chart ( true or false )
-	$config['dompdf'] = $csetting['Enable_dompdf'];
-	// Allow registration ( true or false )
-	$config['user_registration'] = $csetting['Enable_user_registration'];
-	// verify email address ( true or false )
-	$config['verify_email'] = $csetting['Verify_user_email'];
-	// tinymce editor ( true or false )
-	$config['tinymce'] = $csetting['Tinymce_editor'];
-	// eqneditor plugin in tinymce ( true or false )
-	$config['eqneditor'] = $csetting['Tinymce_eqneditor_plugin'];
-	// eqneditor plugin in tinymce ( true or false )
-	$config['wiris'] = $csetting['Tinymce_wiris_plugin'];
-	// enable mathjax
-	$config['mathjax'] = $csetting['Mathjax'];
-	// default group id
-	$config['default_gid'] = $csetting['Default_group_id'];
-	// Allow open quiz( true or false )
-	$config['open_quiz'] = $csetting['Enable_open_quiz'];
-	// enable sharethis (true or false)
-	$config['sharethis'] = $csetting['Enable_sharethis'];
-	// property key
-	$config['sharethis_property'] = $csetting['Sharethis_property_id'];
-	// display advertisement after X number of seconds of starting quiz
-	$config['showadvertisement_after'] = $csetting['Advertisement_display_after_seconds'];
-	// display advertisement during quiz for seconds
-	$config['showadvertisement_sec'] = $csetting['Advertisement_display_for_seconds'];
-	// API key for android app
-	$config['api_key'] = $csetting['Android_API_key'];
-	// allow user to change their group. use true or false
-	$config['allow_switch_group'] = true;
-	// default free group id - gid
-	$config['default_group'] = 1;
-	// Use wordpress userdatabase to login. use true or false
-	$config['wp-login'] = false;
-	// wp path to wp-blog-header.php
-	$config['wp-path'] = '../wp/wp-blog-header.php';
-	// email sending protocol mail or smtp
-	$config['protocol'] = $csetting['Email_protocol'];
-	/*
-	| SMTP configuration to send email to user just after submitting quiz
-	| This feature is under testing version, We are not responsible if it does not work with any devices or browsers.
-	*/
-	// smtp hostname eg. smtp.gmail.com
-	$config['smtp_hostname'] = $csetting['SMTP_hostname'];
-	// smtp username
-	$config['smtp_username'] = $csetting['SMTP_username'];
-	// smtp password
-	$config['smtp_password'] = $csetting['SMTP_password'];
-	// smtp outgoing port. eg for gmail its 465, outlook 587, yahoo 465 for other contact your mailing administrator
-	$config['smtp_port'] = $csetting['SMTP_port'];
-	// smtp timeout default 5 seconds
-	$config['smtp_timeout'] = "5";
-	// smtp tls
-	$config['starttls'] = TRUE;
-	// new line
-	$config['newline'] = "\r\n";
-	// email message content text of html.
-	// In html email make sure you don't have any relative links or relative image paths otherwise they will not work.
-	$config['smtp_mailtype'] = $csetting['SMTP_mailtype'];
-	// activation email subject
-	$config['activation_subject'] = $csetting['Activation_email_subject'];
-	// activation email message
-	$config['activation_message'] = $csetting['Activation_email_message'];
-	// password reset email subject
-	$config['password_subject'] = $csetting['Password_change_subject'];
-	// password reset email message
-	$config['password_message'] = $csetting['Password_change_message'];
-	// enable or disable result email. use true or false
-	$config['allow_result_email'] = $csetting['Send_result_email'];
-	// Default result message
-	// you can use below tags and system replace it with related variables.
-	// [username] [email] [first_name] [last_name] [score_obtained] [percentage_obtained] [result_status] [quiz_name] [current_date]
-	$config['result_message'] = $csetting['Result_email_message'];
-	// result email subject
-	$config['result_subject'] = $csetting['Result_email_subject'];
-	// email send from
-	$config['fromemail'] = $csetting['SMTP_username'];
-	// from name
-	$config['fromname'] = "Administrator - Quiz Portal";
-	// payment gateway
-	$config['base_currency_prefix'] = $csetting['Base_currency_prefix'];
-	$config['base_currency_sufix'] = $csetting['Base_currency_sufix'];
-	$pga = explode(',', $csetting['Payment_gateways']);
-	$config['payment_gateways'] = array(
-		'paypal',
-		'checkout',
-		'payumoney',
-		'paytm'
-	);
-	$config['default_gateway'] = $csetting['Default_gateway'];
-	// enable - disable paypal gateway
-	$config['paypal'] = $csetting['Enable_paypal'];
-	// environment empty for real and sandbox. for testing (don't forget dot at end of sandbox)
-	$config['paypal_environment'] = $csetting['Paypal_environment'];
-	$config['paypal_receiver'] = $csetting['Paypal_receiver'];
-	$config['paypal_currency_prefix'] = $csetting['Paypal_currency_prefix'];
-	$config['paypal_currency_sufix'] = $csetting['Paypal_currency_sufix'];
-	// 1 unit of paypal currency = how many unit of base currency
-	$config['paypal_conversion'] = $csetting['Paypal_conversion'];
-	// enable - disable 2checkout gateway
-	$config['checkout'] = $csetting['Enable_checkout'];
-	// environment empty for real and sandbox. for testing (don't forget dot at end of sandbox)
-	$config['checkout_environment'] = $csetting['Checkout_environment'];
-	$config['checkout_sid'] = $csetting['Checkout_sid'];
-	$config['checkout_SecretWord'] = $csetting['Checkout_SecretWord'];
-	$config['checkout_receiver'] = $csetting['Checkout_receiver'];
-	$config['checkout_currency_prefix'] = $csetting['Checkout_currency_prefix'];
-	$config['checkout_currency_sufix'] = $csetting['Checkout_currency_sufix'];
-	// 1 unit of checkout currency = how many unit of base currency
-	$config['checkout_conversion'] = $csetting['Checkout_conversion'];
-	// enable - disable payumoney gateway
-	$config['payumoney'] = $csetting['Enable_payumoney'];
-	// payu merchant key
-	$config['payu_merchant_key'] = $csetting['Payu_merchant_key'];
-	// payu salt
-	$config['payu_salt'] = $csetting['Payu_salt'];
-	$config['payumoney_currency_prefix'] = $csetting['Payumoney_currency_prefix'];
-	$config['payumoney_currency_sufix'] = $csetting['Payumoney_currency_sufix'];
-	// 1 unit of payumoney currency = how many unit of base currency
-	$config['payumoney_conversion'] = $csetting['Payumoney_conversion'];
-	// enable - disable paytm gateway
-	$config['paytm'] = $csetting['Enable_paytm'];
-	// environment TEST or PROD
-	$config['paytm_environment'] = $csetting['Paytm_environment'];
-	// paytm merchant key
-	$config['paytm_merchant_key'] = $csetting['Paytm_merchant_key'];
-	// paytm merchant mid
-	$config['paytm_merchant_id'] = $csetting['Paytm_merchant_id'];
-	// paytm merchant website
-	$config['paytm_merchant_website'] = $csetting['Paytm_merchant_website'];
-	$config['paytm_currency_prefix'] = $csetting['Paytm_currency_prefix'];
-	$config['paytm_currency_sufix'] = $csetting['Paytm_currency_sufix'];
-	// 1 unit of paytm currency = how many unit of base currency
-	$config['paytm_conversion'] = $csetting['Paytm_conversion'];
-	// Firebase notification https://firebase.google.com/
-	/*
-	browsers support firebase notification
-	Chrome: 50+
-	Firefox: 44+
-	Opera Mobile: 37+
-	*/
-	$config['firebase_apiKey'] = "";
-	$config['firebase_authDomain'] = "";
-	$config['firebase_databaseURL'] = "";
-	$config['firebase_projectId'] = "";
-	$config['firebase_storageBucket'] = "";
-	$config['firebase_messagingSenderId'] = "";
-	// auth key or server key. find in https://console.firebase.google.com
-	// go to project setting then cloud messaging
-	$config['firebase_serverkey'] = "";
-	$config['firebase_topic'] = "SavsoftQuiz";
-	$config['quiz_templates'] = array(
-		'Default',
-		'Practice'
-	);
-	$config['question_lang'] = array('English');
-	$config['master_password'] = $csetting['Master_password'];
+
+if(isset($sq_dbname)){
+// Create connection
+$conn = new mysqli($sq_hostname, $sq_dbusername, $sq_dbpassword, $sq_dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+ 
+$sql = " select * from savsoftquiz_setting";
+$result_config = $conn->query($sql);
+ $csetting=array();
+	 foreach($result_config as $k => $val){
+		$csetting[$val['setting_name']]=$val['setting_value']; 
+	 }
+ 
+ 
+ 
+ 
+ 
+  
+// language direction ( ltr or rtl )
+$config['direction']=$csetting['Language_direction'];
+
+
+// enable webcam js ( true or false )
+$config['webcam']=$csetting['Enable_web_cam'];
+
+
+
+// google chart ( true or false )
+$config['google_chart']=$csetting['Enable_google_chart'];
+
+// google chart ( true or false )
+$config['dompdf']=$csetting['Enable_dompdf'];
+
+ 
+// Allow registration ( true or false )
+$config['user_registration']=$csetting['Enable_user_registration'];
+
+// verify email address ( true or false )
+$config['verify_email']=$csetting['Verify_user_email'];
+
+// tinymce editor ( true or false )
+$config['tinymce']=$csetting['Tinymce_editor'];
+// eqneditor plugin in tinymce ( true or false )
+$config['eqneditor']=$csetting['Tinymce_eqneditor_plugin'];
+// eqneditor plugin in tinymce ( true or false )
+$config['wiris']=$csetting['Tinymce_wiris_plugin'];
+
+
+// enable mathjax
+$config['mathjax']=$csetting['Mathjax'];;
+
+// default group id
+$config['default_gid']=$csetting['Default_group_id'];
+
+  
+// Allow open quiz( true or false )
+$config['open_quiz']=$csetting['Enable_open_quiz'];
+
+ 
+// enable sharethis (true or false)
+$config['sharethis']=$csetting['Enable_sharethis'];
+// property key
+$config['sharethis_property']=$csetting['Sharethis_property_id'];
+
+  
+ 
+// display advertisement after X number of seconds of starting quiz
+$config['showadvertisement_after']=$csetting['Advertisement_display_after_seconds'];
+// display advertisement during quiz for seconds
+$config['showadvertisement_sec']=$csetting['Advertisement_display_for_seconds'];
+
+  
+ 
+
+// API key for android app
+$config['api_key']=$csetting['Android_API_key'];
+
+
+
+
+// allow user to change their group. use true or false
+$config['allow_switch_group']=true;
+// default free group id - gid
+$config['default_group']=1;
+
+
+// Use wordpress userdatabase to login. use true or false
+$config['wp-login']=false;
+// wp path to wp-blog-header.php
+$config['wp-path']='../wp/wp-blog-header.php';
+
+
+
+// email sending protocol mail or smtp
+$config['protocol']=$csetting['Email_protocol'];
+
+/*
+| SMTP configuration to send email to user just after submitting quiz
+| This feature is under testing version, We are not responsible if it does not work with any devices or browsers.
+*/
+
+// smtp hostname eg. smtp.gmail.com
+$config['smtp_hostname'] = $csetting['SMTP_hostname'];
+// smtp username
+$config['smtp_username'] = $csetting['SMTP_username'];
+// smtp password
+$config['smtp_password'] = $csetting['SMTP_password'];
+// smtp outgoing port. eg for gmail its 465, outlook 587, yahoo 465 for other contact your mailing administrator
+$config['smtp_port'] = $csetting['SMTP_port'];
+// smtp timeout default 5 seconds
+$config['smtp_timeout'] = "5";
+// smtp tls
+$config['starttls'] = TRUE;
+// new line
+$config['newline'] = "<br>";
+// email message content text of html. 
+// In html email make sure you don't have any relative links or relative image paths otherwise they will not work.
+$config['smtp_mailtype'] = $csetting['SMTP_mailtype'];
+
+
+// activation email subject
+$config['activation_subject'] = $csetting['Activation_email_subject'];
+// activation email message
+$config['activation_message'] = $csetting['Activation_email_message'];
+
+
+// password reset email subject
+$config['password_subject'] = $csetting['Password_change_subject'];
+// password reset email message
+$config['password_message'] = $csetting['Password_change_message'];
+
+
+// enable or disable result email. use true or false
+$config['allow_result_email']=$csetting['Send_result_email'];
+
+
+// Default result message
+// you can use below tags and system replace it with related variables. 
+// [username] [email] [first_name] [last_name] [score_obtained] [percentage_obtained] [result_status] [quiz_name] [current_date]
+$config['result_message'] = $csetting['Result_email_message'];
+// result email subject
+$config['result_subject'] = $csetting['Result_email_subject'];
+
+
+
+
+// email send from
+$config['fromemail']=$csetting['SMTP_username'];
+// from name
+$config['fromname']="Administrator - Quiz Portal";
+
+
+
+
+// payment gateway
+
+
+$config['base_currency_prefix']=$csetting['Base_currency_prefix'];
+$config['base_currency_sufix']=$csetting['Base_currency_sufix'];
+$pga=explode(',',$csetting['Payment_gateways']);
+$config['payment_gateways']=array('paypal','checkout','payumoney','paytm');
+$config['default_gateway']=$csetting['Default_gateway'];
+
+// enable - disable paypal gateway
+$config['paypal']=$csetting['Enable_paypal'];
+// environment empty for real and sandbox. for testing (don't forget dot at end of sandbox)
+$config['paypal_environment']=$csetting['Paypal_environment'];
+$config['paypal_receiver']=$csetting['Paypal_receiver'];
+$config['paypal_currency_prefix']=$csetting['Paypal_currency_prefix'];
+$config['paypal_currency_sufix']=$csetting['Paypal_currency_sufix'];
+// 1 unit of paypal currency = how many unit of base currency
+$config['paypal_conversion']=$csetting['Paypal_conversion'];
+
+
+// enable - disable 2checkout gateway
+$config['checkout']=$csetting['Enable_checkout'];
+// environment empty for real and sandbox. for testing (don't forget dot at end of sandbox)
+$config['checkout_environment']=$csetting['Checkout_environment'];
+$config['checkout_sid']=$csetting['Checkout_sid'];
+$config['checkout_SecretWord']=$csetting['Checkout_SecretWord'];
+$config['checkout_receiver']=$csetting['Checkout_receiver'];
+$config['checkout_currency_prefix']=$csetting['Checkout_currency_prefix'];
+$config['checkout_currency_sufix']=$csetting['Checkout_currency_sufix'];
+// 1 unit of checkout currency = how many unit of base currency
+$config['checkout_conversion']=$csetting['Checkout_conversion'];
+
+
+ 
+// enable - disable payumoney gateway
+$config['payumoney']=$csetting['Enable_payumoney'];
+// payu merchant key
+$config['payu_merchant_key']=$csetting['Payu_merchant_key'];
+// payu salt
+$config['payu_salt']=$csetting['Payu_salt'];
+$config['payumoney_currency_prefix']=$csetting['Payumoney_currency_prefix'];
+$config['payumoney_currency_sufix']=$csetting['Payumoney_currency_sufix'];
+// 1 unit of payumoney currency = how many unit of base currency
+$config['payumoney_conversion']=$csetting['Payumoney_conversion'];
+
+
+
+
+// enable - disable paytm gateway
+$config['paytm']=$csetting['Enable_paytm'];
+// environment TEST or PROD 
+$config['paytm_environment']=$csetting['Paytm_environment'];
+// paytm merchant key
+$config['paytm_merchant_key']=$csetting['Paytm_merchant_key'];
+// paytm merchant mid
+$config['paytm_merchant_id']=$csetting['Paytm_merchant_id'];
+// paytm merchant website
+$config['paytm_merchant_website']=$csetting['Paytm_merchant_website'];
+$config['paytm_currency_prefix']=$csetting['Paytm_currency_prefix'];
+$config['paytm_currency_sufix']=$csetting['Paytm_currency_sufix'];
+// 1 unit of paytm currency = how many unit of base currency
+$config['paytm_conversion']=$csetting['Paytm_conversion'];
+
+
+
+
+// Firebase notification https://firebase.google.com/
+/*
+browsers support firebase notification
+Chrome: 50+
+Firefox: 44+
+Opera Mobile: 37+
+*/
+$config['firebase_apiKey']="";
+$config['firebase_authDomain']="";
+$config['firebase_databaseURL']="";
+$config['firebase_projectId']="";
+$config['firebase_storageBucket']="";
+$config['firebase_messagingSenderId']="";
+// auth key or server key. find in https://console.firebase.google.com 
+// go to project setting then cloud messaging
+$config['firebase_serverkey']="";
+$config['firebase_topic']="SavsoftQuiz";
+
+
+$config['quiz_templates']=array('Default','Practice');
+$config['question_lang']=array('English');
+
+$config['master_password']=$csetting['Master_password'];
+ 
+ 
 }
  
 

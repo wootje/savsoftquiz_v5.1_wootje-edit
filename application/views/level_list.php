@@ -31,11 +31,9 @@
 					foreach ($level_list as $key => $val) {
 						?>
 						<tr>
-							<td>
-								<input type="text" class="form-control" value="<?php
+							<td><input type="text" class="form-control" value="<?php
 								echo $val['level_name']; ?>" onBlur="updatelevel(this.value,'<?php
-								echo $val['lid']; ?>');">
-							</td>
+								echo $val['lid']; ?>');"></td>
 							<td>
 								<a href="<?php
 								echo site_url('qbank/pre_remove_level/' . $val['lid']); ?>"><img src="<?php
@@ -48,8 +46,7 @@
 					<tr>
 						<td>
 							<input type="text" class="form-control" name="level_name" value="" placeholder="<?php
-							echo $this->lang->line('level_name'); ?>" required>
-						</td>
+							echo $this->lang->line('level_name'); ?>" required></td>
 						<td>
 							<button class="btn btn-default" type="submit"><?php
 								echo $this->lang->line('add_new'); ?></button>

@@ -8,11 +8,9 @@ echo site_url('setting/update'); ?>">
 			<li class="<?php
 			if ($k == 0) {
 				echo 'active';
-			} ?>" style="background:#dddddd;margin-right:5px;">
-				<a data-toggle="tab" href="#tab<?php
+			} ?>" style="background:#dddddd;margin-right:5px;"><a data-toggle="tab" href="#tab<?php
 				echo $k; ?>"><?php
-					echo str_replace('_', ' ', $val); ?></a>
-			</li>
+					echo str_replace('_', ' ', $val); ?></a></li>
 		<?php
 		} ?>
 	</ul>

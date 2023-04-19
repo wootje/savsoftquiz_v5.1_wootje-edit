@@ -80,11 +80,9 @@
 							?>
 							<tr>
 								<td colspan='2'> <?php
-									if ($result['photo'] != '') { ?>
-										<img                                        src="<?php
-										echo base_url('photo/' . $result['photo']); ?>"                                        id="photograph" ><?php
-									} ?>
-								</td>
+									if ($result['photo'] != '') { ?> <img src="<?php
+									echo base_url('photo/' . $result['photo']); ?>" id="photograph" ><?php
+									} ?></td>
 							</tr>
 							<?php
 						}
@@ -176,7 +174,7 @@
 						chart.draw(data, options);
 					}
 				</script>
-				<div id="chart_div" style="overflow-x:scroll;width:100%;min-height:200px;"></div>                <!-- google chart ends --><!-- google chart starts -->
+				<div id="chart_div" style="overflow-x:scroll;width:100%;min-height:200px;"></div><!-- google chart ends --><!-- google chart starts -->
 				<script type="text/javascript">
 					google.load("visualization", "1", {packages: ["corechart"]});
 					google.setOnLoadCallback(drawChart);
@@ -189,7 +187,7 @@
 						chart.draw(data, options);
 					}
 				</script>
-				<div id="chart_div2" style="overflow-x:scroll;width:100%;min-height:200px;"></div>                <!-- google chart ends -->
+				<div id="chart_div2" style="overflow-x:scroll;width:100%;min-height:200px;"></div><!-- google chart ends -->
 				<?php
 			}
 			$ind_score = explode(',', $result['score_individual']);
@@ -353,6 +351,8 @@
 										?>
 										<input type="hidden" name="question_type[]" id="q_type<?php
 										echo $qk; ?>" value="4">
+										<?php
+										?>
 										<div class="op">
 											<?php
 											echo $this->lang->line('answer'); ?> <br>

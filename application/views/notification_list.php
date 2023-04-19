@@ -30,7 +30,7 @@
 				?>
 				<a href="<?php
 				echo site_url('notification/add_new'); ?>" class="btn btn-success"><?php
-					echo $this->lang->line('add_new'); ?></a>				<br><br>
+					echo $this->lang->line('add_new'); ?></a><br><br>
 				<?php
 			}
 			?>
@@ -68,11 +68,9 @@
 					<tr>
 						<td><?php
 							echo $val['nid']; ?></td>
-						<td>
-							<a href="<?php
+						<td><a href="<?php
 							echo $val['click_action']; ?>" target="fcmclick"><?php
-								echo $val['title']; ?></a>
-						</td>
+								echo $val['title']; ?></a></td>
 						<td><?php
 							echo $val['message']; ?></td>
 						<?php
@@ -85,10 +83,9 @@
 									?><?php
 									echo $this->lang->line('all_users'); ?><?php
 								} else {
-									?>
-									<a href="<?php
+									?><a href="<?php
 									echo site_url('user/edit_user/' . $val['uid']); ?>"><?php
-										echo $val['first_name'] . ' ' . $val['last_name']; ?></a>
+									echo $val['first_name'] . ' ' . $val['last_name']; ?></a>
 									<?php
 								}
 								?>

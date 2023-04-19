@@ -13,7 +13,8 @@
 					}
 					?>
 					<h3><?php
-						echo $title; ?></h3>                    <br>
+						echo $title; ?></h3>
+					<br>
 					<?php
 					if (!$this->session->userdata('logged_in')) {
 						?>

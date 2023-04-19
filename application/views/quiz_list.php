@@ -39,8 +39,8 @@
 				} ?> ">
 					<a href="<?php
 					echo site_url('quiz/index/' . $limit . '/table/active'); ?>"> <?php
-						echo $this->lang->line('active'); ?><?php
-						echo $this->lang->line('quiz'); ?>
+						echo $this->lang->line('available') . ' '; ?><?php
+						echo $this->lang->line('quizzes'); ?>
 					</a>
 				</div>
 				<div class="card-body">
@@ -57,8 +57,8 @@
 				} ?> ">
 					<a href="<?php
 					echo site_url('quiz/index/' . $limit . '/table/upcoming'); ?>">   <?php
-						echo $this->lang->line('upcoming'); ?><?php
-						echo $this->lang->line('quiz'); ?>
+						echo $this->lang->line('upcoming') . ' '; ?><?php
+						echo $this->lang->line('quizzes'); ?>
 					</a>
 				</div>
 				<div class="card-body">
@@ -75,8 +75,8 @@
 				} ?> ">
 					<a href="<?php
 					echo site_url('quiz/index/' . $limit . '/table/archived'); ?>">  <?php
-						echo $this->lang->line('archived'); ?><?php
-						echo $this->lang->line('quiz'); ?>
+						echo $this->lang->line('archived') . ' '; ?><?php
+						echo $this->lang->line('quizzes'); ?>
 					</a>
 				</div>
 				<div class="card-body">

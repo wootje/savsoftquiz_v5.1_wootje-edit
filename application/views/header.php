@@ -284,8 +284,7 @@ $hres = $hquery->result_Array();
 						echo site_url('qbank/level_list'); ?>"><?php
 							echo $this->lang->line('level_list'); ?></a> <a class="collapse-item" href="<?php
 						echo site_url('account'); ?>"><?php
-							echo $this->lang->line('account_type'); ?></a></a>
-						<a class="collapse-item" href="<?php
+							echo $this->lang->line('account_type'); ?></a></a><a class="collapse-item" href="<?php
 						echo site_url('user/custom_fields'); ?>"><?php
 							echo $this->lang->line('custom_forms'); ?></a> <a class="collapse-item" href="<?php
 						echo site_url('payment_gateway'); ?>"><?php
@@ -390,10 +389,8 @@ $hres = $hquery->result_Array();
 							}
 							if (count($invitations) == 0 && count($notifications) == 0) {
 								?><a class="dropdown-item d-flex align-items-center" href="#">
-								<div class="small text-gray-500">
-									<span class="font-weight-bold"><?php
-										echo "No notification for you!"; ?></span>
-								</div></a><?php
+								<div class="small text-gray-500"><span class="font-weight-bold"><?php
+										echo "No notification for you!"; ?></span></div></a><?php
 							}
 							?>
 						</div>
@@ -422,8 +419,7 @@ $hres = $hquery->result_Array();
 							if (in_array('List', explode(',', $logged_in['appointment'])) && !in_array('List_all', explode(',', $logged_in['appointment']))) { ?>
 								<a class="dropdown-item" href="<?php
 								echo site_url('appointment/myappointment/'); ?>"><i class="fas fa-mobile fa-sm fa-fw mr-2 text-gray-400"></i><?php
-									echo $this->lang->line('myappointment'); ?>
-								</a>
+									echo $this->lang->line('myappointment'); ?></a>
 							<?php
 							} ?>
 							<div class="dropdown-divider"></div>
@@ -447,10 +443,9 @@ $hres = $hquery->result_Array();
 							$ad = $query->row_array();
 							if ($ad['advertisement_code'] != "") {
 								echo $ad['advertisement_code'];
-							} else if ($ad['banner'] != '') { ?>
-								<a href="<?php
-								echo $ad['banner_link']; ?>" target="new_add"> <img src="<?php
-									echo base_url('upload/' . $ad['banner']); ?>" class="img-responsive"> </a> <?php
+							} else if ($ad['banner'] != '') { ?><a href="<?php
+							echo $ad['banner_link']; ?>" target="new_add"><img src="<?php
+								echo base_url('upload/' . $ad['banner']); ?>" class="img-responsive"></a> <?php
 							}
 						}
 					}

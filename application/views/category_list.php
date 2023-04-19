@@ -31,11 +31,9 @@
 					foreach ($category_list as $key => $val) {
 						?>
 						<tr>
-							<td>
-								<input type="text" class="form-control" value="<?php
+							<td><input type="text" class="form-control" value="<?php
 								echo $val['category_name']; ?>" onBlur="updatecategory(this.value,'<?php
-								echo $val['cid']; ?>');">
-							</td>
+								echo $val['cid']; ?>');"></td>
 							<td>
 								<a href="<?php
 								echo site_url('qbank/pre_remove_category/' . $val['cid']); ?>"><img src="<?php
@@ -48,8 +46,7 @@
 					<tr>
 						<td>
 							<input type="text" class="form-control" name="category_name" value="" placeholder="<?php
-							echo $this->lang->line('category_name'); ?>" required>
-						</td>
+							echo $this->lang->line('category_name'); ?>" required></td>
 						<td>
 							<button class="btn btn-default" type="submit"><?php
 								echo $this->lang->line('add_new'); ?></button>

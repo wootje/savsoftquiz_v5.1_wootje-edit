@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/savsoftquiz_v5.1_php7-8.iml" filepath="$PROJECT_DIR$/.idea/savsoftquiz_v5.1_php7-8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/public_to_upload.iml" filepath="$PROJECT_DIR$/.idea/public_to_upload.iml" />
     </modules>
   </component>
 </project>

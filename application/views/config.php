@@ -3,7 +3,8 @@
 		<form class="form-signin" method="post" action="<?php
 		echo site_url('dashboard/config'); ?>">
 			<h4><?php
-				echo $this->lang->line('config'); ?></h4>            <br>
+				echo $this->lang->line('config'); ?></h4>
+			<br>
 			<?php
 			echo $this->lang->line('config_warning'); ?>
 			<br>

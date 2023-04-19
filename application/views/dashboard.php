@@ -155,20 +155,22 @@
 						foreach ($result as $key => $val) {
 							?>
 							<tr>
-								<td>
-									<a href="<?php
-									echo site_url('user/edit_user/' . $val['uid']); ?>"><?php
-										echo $val['email']; ?><?php
-										echo $val['wp_user']; ?></a>
-								</td>
-								<td class="text-xs-right"><?php
-									echo $val['first_name']; ?><?php
-									echo $val['last_name']; ?></td>
-								<td class="text-xs-right"><?php
-									echo $val['group_name']; ?></td>
-								<td class="text-xs-right"><?php
-									echo $val['contact_no']; ?></td>
+							<td>
+								<a href="<?php
+								echo site_url('user/edit_user/' . $val['uid']); ?>"><?php
+									echo $val['email']; ?><?php
+									echo $val['wp_user']; ?></a></td>
+							<td class="text-xs-right"><?php
+								echo $val['first_name']; ?><?php
+								echo $val['last_name']; ?></td>
+							<td class="text-xs-right"><?php
+								echo $val['group_name']; ?></td>
+							<td class="text-xs-right"><?php
+								echo $val['contact_no']; ?></td>
+
+
 							</tr>
+
 							<?php
 						}
 						?>
@@ -239,8 +241,7 @@
 				</div>
 				<!-- Card Body -->
 				<div class="card-body">
-					<div class="font-size-34">
-						<small class="font-weight-light text-muted"><?php
+					<div class="font-size-34"><small class="font-weight-light text-muted"><?php
 							echo $this->config->item('base_currency_prefix'); ?></small> <strong><?php
 							echo number_format(array_sum($revenue_months2), 2, '.', ''); ?></strong>
 						<small class="font-weight-light text-muted"><?php

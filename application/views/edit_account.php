@@ -152,7 +152,11 @@
 								} ?> >Remove </label>
 						</div>
 						<div class="form-group">
-							<label>Setting</label> <br> <label class="checkbox-inline"> All
+							<label>Setting</label><br> <label class="checkbox-inline">
+								<input type="checkbox" value="All" name="setting" <?php
+								if (in_array('All', explode(',', $result['setting']))) {
+									echo 'checked';
+								} ?> >All
 						</div>
 						<button class="btn btn-info" type="submit"><?php
 							echo $this->lang->line('submit'); ?></button>

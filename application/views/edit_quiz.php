@@ -60,8 +60,7 @@ echo base_url('js/select2.min.js'); ?>"></script>
 									echo $this->lang->line('description'); ?></label>
 								<textarea name="description" class="form-control tinymce_textarea"><?php
 									echo $quiz['description']; ?></textarea>
-							</div>
-							<a href="#" data-toggle="collapse" data-target="#advance_options"><?php
+							</div><a href="#" data-toggle="collapse" data-target="#advance_options"><?php
 								echo $this->lang->line('advance_options'); ?></a>
 							<?php
 						}
@@ -299,8 +298,7 @@ echo base_url('js/select2.min.js'); ?>"></script>
 							} else {
 								?>
 								<h4 style="margin-left:0px!important;"><?php
-									echo $this->lang->line('questions_added_into_quiz'); ?></h4>
-								<a href="<?php
+									echo $this->lang->line('questions_added_into_quiz'); ?></h4><a href="<?php
 								echo site_url('quiz/add_question/' . $quiz['quid']); ?>" class="btn btn-danger" style="margin:10px 10px 10px 15px;"><?php
 									echo $this->lang->line('add_question_into_quiz'); ?></a>
 								<table class="table table-bordered" style="margin-top:10px;">
@@ -343,15 +341,13 @@ echo base_url('js/select2.min.js'); ?>"></script>
 												echo $val['category_name']; ?></td>
 											<td><?php
 												echo $val['level_name']; ?></td>
-											<td>
-												<input type="text" style="width:60px;" name="i_correct[]" value="<?php
+											<td><input type="text" style="width:60px;" name="i_correct[]" value="<?php
 												if (isset($quiz['correct_score'][$key])) {
 													echo explode(',', $quiz['correct_score'])[$key];
 												} else {
 													echo '1';
 												} ?>"></td>
-											<td>
-												<input type="text" style="width:60px;" name="i_incorrect[]" value="<?php
+											<td><input type="text" style="width:60px;" name="i_incorrect[]" value="<?php
 												if (isset($quiz['incorrect_score'][$key])) {
 													echo explode(',', $quiz['incorrect_score'])[$key];
 												} else {
@@ -537,8 +533,7 @@ echo base_url('js/select2.min.js'); ?>"></script>
 	</div>
 </div>
 <div id="warning_div" style="padding:10px; position:fixed;z-index:100;display:none;width:100%;border-radius:5px;height:200px; border:1px solid #dddddd;left:4px;top:70px;background:#ffffff;">
-	<center>
-		<b> <?php
+	<center><b> <?php
 			echo $this->lang->line('to_which_position'); ?></b><br><input type="text" style="width:30px" id="qposition" value=""><br><br>
 		<a href="javascript:cancelmove();" class="btn btn-danger" style="cursor:pointer;"><?php
 			echo $this->lang->line('cancel'); ?></a> &nbsp; &nbsp; &nbsp; &nbsp;

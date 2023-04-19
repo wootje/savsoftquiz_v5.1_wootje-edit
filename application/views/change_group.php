@@ -42,16 +42,14 @@
 							}
 						} else {
 							?>
-							<button type="button" class="btn btn-default">
-								<i class="fa fa-check-circle"></i> <?php
-								echo $this->lang->line('subscribed'); ?>
-							</button>
+							<button type="button" class="btn btn-default"><i class="fa fa-check-circle"></i> <?php
+								echo $this->lang->line('subscribed'); ?></button>
 							<?php
 						}
 						?>
 					</div>
 				</div>
-			</div>            <!-- /item -->
+			</div><!-- /item -->
 			<?php
 			if ($cc >= 4) {
 				$cc = 0;

@@ -5,17 +5,17 @@
 	}
 	?>
 	<div class="row">
-		<div class="col-md-12"><br>
+		<div class="col-md-12">
+			<br>
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h3>
-						<?php
-						echo $title . ' : ' . $result['assignment_title']; ?>
-					</h3>
+					<h3><?php
+						echo $title . ' : ' . $result['assignment_title']; ?></h3>
 				</div>
 				<div class="panel-body">
 					<?php
-					echo $result['assignment_description']; ?> <br>
+					echo $result['assignment_description']; ?>
+					<br>
 					<?php
 					if ($result['attachments'] != '') {
 						$filenameee = explode('.', $result['attachments']);
@@ -44,14 +44,14 @@
 				</div>
 				<div class="panel-footer">
 					<?php
-					echo $this->lang->line('due_date'); ?>:
-					<?php
-					echo $result['due_date']; ?> </div>
+					echo $this->lang->line('due_date'); ?>: <?php
+					echo $result['due_date']; ?>
+				</div>
 				<div class="panel-footer">
 					<?php
-					echo $this->lang->line('category'); ?>:
-					<?php
-					echo $result['category_name']; ?> </div>
+					echo $this->lang->line('category'); ?>: <?php
+					echo $result['category_name']; ?>
+				</div>
 				<div class="panel-footer">
 					<?php
 					echo $this->lang->line('group_name'); ?>: <br>
@@ -63,7 +63,8 @@
 							echo ", ";
 						}
 						?><?php
-					} ?> </div>
+					} ?>
+				</div>
 			</div>
 			<a href="<?php
 			echo site_url('assignment/'); ?>"><?php
@@ -78,10 +79,8 @@
 				?><?php
 			}
 			?>
-			<h3>
-				<?php
-				echo $this->lang->line('submitted_by_users'); ?>
-			</h3>
+			<h3><?php
+				echo $this->lang->line('submitted_by_users'); ?></h3>
 			<?php
 			if (count($uploaded_reports) == 0) {
 				echo $this->lang->line('no_record_found');
@@ -95,24 +94,21 @@
 				<div class="panel panel-deault">
 					<div class="panel-heading">
 						<div class="col-lg-6">
-							<a href="#">
-								<?php
-								echo $vals['first_name'] . ' ' . $vals['last_name']; ?>
-							</a> <br>
+							<a href="#"><?php
+								echo $vals['first_name'] . ' ' . $vals['last_name']; ?></a> <br>
 							<?php
-							echo $this->lang->line('attachment'); ?>
-							<a href="<?php
+							echo $this->lang->line('attachment'); ?> <a href="<?php
 							echo base_url('upload/' . $vals['user_attachment']); ?>" id="user_reports"><?php
 								echo $this->lang->line('download'); ?></a> <br> <span style="font-size:11px;"><?php
 								echo $this->lang->line('submitted_on') . ' ' . $vals['reported_date']; ?></span> <br>
 							<?php
-							echo $this->lang->line('score'); ?>:
-							<?php
+							echo $this->lang->line('score'); ?>: <?php
 							if ($vals['evaluated'] == 'Pending') {
 								echo 'Pending';
 							} else {
 								echo $vals['score'];
-							} ?> </div>
+							} ?>
+						</div>
 						<div class="col-lg-6">
 							<?php
 							$acp = explode(',', $logged_in['assignment']);
@@ -122,16 +118,19 @@
 									echo site_url('assignment/insert_score/' . $result['assignment_id'] . '/' . $vals['report_id']); ?>">
 										<input type="text" name="score" placeholder="<?php
 										echo $this->lang->line('score'); ?>"> <input type="submit" value="<?php
-										echo $this->lang->line('submit'); ?>"></form>
+										echo $this->lang->line('submit'); ?>">
+									</form>
 								<?php
 								}
-							} ?> </div>
+							} ?>
+						</div>
 						<div style="clear:both;"></div>
 					</div>
 				</div>
 				<?php
 			}
-			?> <br><br>
+			?>
+			<br><br>
 			<?php
 			$acp = explode(',', $logged_in['assignment']);
 			if (in_array('Submit', $acp)){
@@ -139,10 +138,8 @@
 			?>
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h3>
-						<?php
-						echo $this->lang->line('submit_report'); ?>
-					</h3>
+					<h3><?php
+						echo $this->lang->line('submit_report'); ?></h3>
 				</div>
 				<div class="panel-body">
 					<?php
@@ -150,7 +147,8 @@
 					<div class="form-group">
 						<label for="inputEmail"><?php
 							echo $this->lang->line('file_upload'); ?></label>
-						<input type="file" required name="userfile"></div>
+						<input type="file" required name="userfile">
+					</div>
 					<button class="btn btn-default" type="submit"><?php
 						echo $this->lang->line('submit'); ?></button>
 					</form>

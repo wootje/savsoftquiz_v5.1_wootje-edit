@@ -17,7 +17,7 @@ foreach ($result as $val) {
 	} ?>;<?php
 	if ($logged_in['su'] == "1") {
 		echo "cursor:pointer;";
-	} ?>width: 250px;                    padding: 5px;                    -webkit-border-radius: 10px;                    -moz-border-radius: 10px;                    border-radius: 10px;">
+	} ?>width: 250px;padding: 5px;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
 		<?php
 		if ($val['su'] == "1") {
 			echo "<span id='username_comment'>Admin:</span> " . $val["content"];

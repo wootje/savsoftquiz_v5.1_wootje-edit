@@ -237,8 +237,8 @@ echo $this->lang->line('hello'); ?> <?php
 							echo $result['first_name']; ?>
 							<?php
 							echo $result['last_name']; ?>!</span> <?php
-						echo str_replace('{attempt_no}', ordinal($attempt), $this->lang->line('title_result')); ?>
-					</h3></center>
+						echo str_replace('{attempt_no}', ordinal($attempt), $this->lang->line('title_result')); ?> </h3>
+				</center>
 			</div>
 			<div class="col-lg-12">
 				<center>
@@ -275,8 +275,7 @@ echo $this->lang->line('hello'); ?> <?php
 					<p><?php
 						echo $this->lang->line('percentile_obtained'); ?></p>
 					<p style="color:#e39500;"><?php
-						echo substr(((($percentile[1] + 1) / $percentile[0]) * 100), 0, 5); ?>
-						%</p>
+						echo substr(((($percentile[1] + 1) / $percentile[0]) * 100), 0, 5); ?>%</p>
 				</div>
 				<div class="col-lg-2" style="text-align:center;">
 					<p><?php
@@ -334,11 +333,9 @@ echo $this->lang->line('hello'); ?> <?php
 							?>
 							<tr>
 								<td colspan='2'> <?php
-									if ($result['photo'] != '') { ?>
-										<img                                        src="<?php
-										echo base_url('photo/' . $result['photo']); ?>"                                        id="photograph" ><?php
-									} ?>
-								</td>
+									if ($result['photo'] != '') { ?> <img src="<?php
+									echo base_url('photo/' . $result['photo']); ?>" id="photograph" ><?php
+									} ?></td>
 							</tr>
 							<?php
 						}
@@ -457,8 +454,7 @@ echo $this->lang->line('hello'); ?> <?php
 							<td><?php
 								echo(($no_C * $result['correct_score']) + ($no_iC * $result['incorrect_score'])); ?></td>
 							<td><?php
-								echo secintomin($cia_tim_cate[0][$vk] + $cia_tim_cate[1][$vk] + $cia_tim_cate[2][$vk]); ?>
-								Min.
+								echo secintomin($cia_tim_cate[0][$vk] + $cia_tim_cate[1][$vk] + $cia_tim_cate[2][$vk]); ?> Min.
 							</td>
 							<td><?php
 								echo $no_C; ?></td>
@@ -484,8 +480,7 @@ echo $this->lang->line('hello'); ?> <?php
 							echo $result['score_obtained']; ?>
 						</th>
 						<th style="background:#337ab7;color:#ffffff;"><?php
-							echo secintomin($result['total_time']); ?>
-							Min. <?php
+							echo secintomin($result['total_time']); ?> Min. <?php
 							echo $this->lang->line('approx'); ?></th>
 						<th style="background:#337ab7;color:#ffffff;"><?php
 							echo $correct; ?></th>
@@ -596,20 +591,17 @@ echo $this->lang->line('hello'); ?> <?php
 					<div <?php
 					if ($rank == '1'){ ?>class="circle_ur s_title" data-toggle="tooltip" title="Your Time" <?php
 					}else{ ?>class="circle_result"<?php
-					} ?>
-						style="font-size:12px;padding-top:10px;"><?php
+					} ?> style="font-size:12px;padding-top:10px;"><?php
 						echo secintomin($toppers[0]['total_time']); ?></div>
 					<div <?php
 					if ($rank == '2'){ ?>class="circle_ur s_title" data-toggle="tooltip" title="Your Time" <?php
 					}else{ ?>class="circle_result"<?php
-					} ?>
-						style="font-size:12px;padding-top:10px;"><?php
+					} ?> style="font-size:12px;padding-top:10px;"><?php
 						echo secintomin($toppers[1]['total_time']); ?></div>
 					<div <?php
 					if ($rank == '3'){ ?>class="circle_ur s_title" data-toggle="tooltip" title="Your Time" <?php
 					}else{ ?>class="circle_result"<?php
-					} ?>
-						style="font-size:12px;padding-top:10px;"><?php
+					} ?> style="font-size:12px;padding-top:10px;"><?php
 						echo secintomin($toppers[2]['total_time']); ?></div>
 					<?php
 					if ($rank > 3) {
@@ -659,7 +651,7 @@ echo $this->lang->line('hello'); ?> <?php
 							chart.draw(data, options);
 						}
 					</script>
-					<div id="chart_div" style="width: 800px; height: 500px;"></div>                    <!-- google chart ends -->                    <!-- google chart starts -->
+					<div id="chart_div" style="width: 800px; height: 500px;"></div><!-- google chart ends --><!-- google chart starts -->
 					<script type="text/javascript">
 						google.load("visualization", "1", {packages: ["corechart"]});
 						google.setOnLoadCallback(drawChart);
@@ -672,7 +664,7 @@ echo $this->lang->line('hello'); ?> <?php
 							chart.draw(data, options);
 						}
 					</script>
-					<div id="chart_div2" style="width:800px; height: 500px;"></div>                    <!-- google chart ends -->
+					<div id="chart_div2" style="width:800px; height: 500px;"></div><!-- google chart ends -->
 					<?php
 				}
 				?>

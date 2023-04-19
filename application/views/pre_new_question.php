@@ -36,8 +36,7 @@
 						</div>
 						<div class="form-group">
 							<input type="checkbox" name="with_paragraph" value="1"> <?php
-							echo $this->lang->line('with_paragraph'); ?>
-						</div>
+							echo $this->lang->line('with_paragraph'); ?></div>
 						<button class="btn btn-default" type="submit"><?php
 							echo $this->lang->line('next'); ?></button>
 					</div>

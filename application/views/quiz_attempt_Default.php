@@ -92,7 +92,7 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 						?>
 						<a href="javascript:switch_category('cat_<?php
 						echo $cat_key; ?>');" class="btn btn-info" style="cursor:pointer;margin-left:5px;"><?php
-							echo $category; ?></a>						<input type="hidden" id="cat_<?php
+							echo $category; ?></a><input type="hidden" id="cat_<?php
 						echo $cat_key; ?>" value="<?php
 						echo getfirstqn($cat_key, $category_range); ?>">
 						<?php
@@ -276,8 +276,7 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 									<?php
 									echo $this->lang->line('answer'); ?> <br>
 									<?php
-									echo $this->lang->line('word_counts'); ?>
-									<span id="char_count<?php
+									echo $this->lang->line('word_counts'); ?> <span id="char_count<?php
 									echo $qk; ?>">0</span> <textarea name="answer[<?php
 									echo $qk; ?>][]" id="answer_value<?php
 									echo $qk; ?>" style="width:100%;height:100%;" onKeyup="count_char(this.value,'char_count<?php
@@ -386,29 +385,25 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#449d44;">&nbsp;</div>
 							<p style="margin-top: 10px;padding-right: 90px;display: inline-block;"> <?php
-								echo $this->lang->line('Answered'); ?> </p>
-						</td>
+								echo $this->lang->line('Answered'); ?> </p></td>
 					</tr>
 					<tr>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#c9302c;">&nbsp;</div>
 							<p style="margin-top: 10px;padding-right: 90px;display: inline-block;"><?php
-								echo $this->lang->line('UnAnswered'); ?> </p>
-						</td>
+								echo $this->lang->line('UnAnswered'); ?> </p></td>
 					</tr>
 					<tr>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#ec971f;">&nbsp;</div>
 							<p style="margin-top: 10px;padding-right: 90px;display: inline-block;"> <?php
-								echo $this->lang->line('Review-Later'); ?> </p>
-						</td>
+								echo $this->lang->line('Review-Later'); ?> </p></td>
 					</tr>
 					<tr>
 						<td style="font-size:12px;">
 							<div class="qbtn" style="background:#212121;">&nbsp;</div>
 							<p style="margin-top: 10px;padding-right: 90px;display: inline-block;"> <?php
-								echo $this->lang->line('Not-visited'); ?> </p>
-						</td>
+								echo $this->lang->line('Not-visited'); ?> </p></td>
 					</tr>
 				</table>
 				<div style="clear:both;"></div>
@@ -461,3 +456,26 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 	</center>
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+ 

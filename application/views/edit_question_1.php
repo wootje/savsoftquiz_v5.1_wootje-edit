@@ -17,13 +17,11 @@
 						}
 						?>
 						<div class="form-group">
-							<?php
-							echo $this->lang->line('multiple_choice_single_answer'); ?>
+							<h4 style="font-weight:700;margin-left:0px;"><?php echo $this->lang->line('multiple_choice_single_answer'); ?></h4>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_category'); ?></label>
-							<select class="form-control" name="cid">
+							<label><b><?php echo $this->lang->line('select_category'); ?></b></label>
+							<select class="form-control" name="cid" style="margin-left:20px;">
 								<?php
 								foreach ($category_list as $key => $val) {
 									?>
@@ -39,9 +37,8 @@
 							</select>
 						</div>
 						<div class="form-group">
-							<label><?php
-								echo $this->lang->line('select_level'); ?></label>
-							<select class="form-control" name="lid">
+							<label><b><?php echo $this->lang->line('select_level'); ?></b></label>
+							<select class="form-control" name="lid" style="margin-left:20px;">
 								<?php
 								foreach ($level_list as $key => $val) {
 									?>
@@ -88,7 +85,7 @@
 							<div class="col-lg-6">
 								<div class="form-group">
 									<label for="inputEmail"><?php
-										echo $this->lang->line('question') . ' : ' . $val; ?></label>
+										echo $this->lang->line('question'); ?></label>
 									<textarea name="question<?php
 									echo $lno; ?>" class="form-control"><?php
 										echo $question['question' . $lno]; ?></textarea>
@@ -105,7 +102,7 @@
 							<div class="col-lg-6">
 								<div class="form-group">
 									<label for="inputEmail"><?php
-										echo $this->lang->line('description') . ' : ' . $val; ?></label>
+										echo $this->lang->line('description'); ?></label>
 									<textarea name="description<?php
 									echo $lno; ?>" class="form-control"><?php
 										echo $question['description' . $lno]; ?></textarea>
@@ -129,16 +126,14 @@
 										<div class="form-group">
 											<label for="inputEmail"><?php
 												echo $this->lang->line('options'); ?> <?php
-												echo($key + 1); ?>) <?php
-												echo ' : ' . $la; ?></label> <br>
+												echo($key + 1); ?>)</label> <br>
 											<?php
 											if ($lkey == 0) {
-												?>
-												<input type="radio" name="score" value="<?php
+												?><input type="radio" name="score" value="<?php
 												echo $key; ?>" <?php
 												if ($val['score'] == 1) {
 													echo 'checked';
-												} ?> > Select Correct Option
+												} ?> > <?echo $this->lang->line('correct'); ?>
 											<?php
 											} ?><br> <textarea name="option<?php
 											echo $lno; ?>[]" class="form-control"><?php
@@ -151,7 +146,7 @@
 							<?php
 						}
 						?>
-						<button class="btn btn-default" type="submit"><?php
+						<button class="btn btn-default" type="submit" style="margin-bottom:40px;"><?php
 							echo $this->lang->line('submit'); ?></button>
 					</div>
 				</div>

@@ -22,8 +22,7 @@
 							</tr>
 							<tr>
 								<td colspan='2'><?php
-									echo $this->lang->line('description'); ?>
-									<br><?php
+									echo $this->lang->line('description'); ?><br><?php
 									echo $quiz['description']; ?></td>
 							</tr>
 							<tr>
@@ -129,25 +128,24 @@
 								}
 							</script>
 							<button class="btn btn-success" type="button" onClick="javascript:capturephoto();"><?php
-								echo $this->lang->line('capture_start_quiz'); ?></button>                        <?php
+								echo $this->lang->line('capture_start_quiz'); ?></button><?php
 						}else{
 						?>
 							<button class="btn btn-success" type="submit"><?php
-								echo $this->lang->line('start_quiz'); ?></button>                        <?php
+								echo $this->lang->line('start_quiz'); ?></button><?php
 						}
 						}else{
 						if ($quiz['with_login'] == 0){
 						?>
 							<button class="btn btn-success" type="submit"><?php
-								echo $this->lang->line('start_quiz'); ?></button>                            &nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="<?php
-							echo site_url('quiz/open_quiz/0'); ?>"><?php
-								echo $this->lang->line('back'); ?></a>
+								echo $this->lang->line('start_quiz'); ?></button>&nbsp;&nbsp;&nbsp;&nbsp; <a href="<?php
+						echo site_url('quiz/open_quiz/0'); ?>"><?php
+							echo $this->lang->line('back'); ?></a>
 							<?php
 						}else {
 							?>
 							<div class="alert alert-danger"><?php
-								echo str_replace('{base_url}', base_url(), $this->lang->line('login_required')); ?></div>                            &nbsp;&nbsp;&nbsp;&nbsp;
+								echo str_replace('{base_url}', base_url(), $this->lang->line('login_required')); ?></div>&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="<?php
 							echo site_url('quiz/open_quiz/0'); ?>"><?php
 								echo $this->lang->line('back'); ?></a>
@@ -162,8 +160,7 @@
 	</div>
 </div>
 <div id="warning_div" style="padding:10px; position:fixed;z-index:100;display:none;width:100%;border-radius:5px;height:200px; border:1px solid #dddddd;left:4px;top:70px;background:#ffffff;">
-	<center>
-		<b> <?php
+	<center><b> <?php
 			echo $this->lang->line('to_which_position'); ?></b><br><input type="text" style="width:30px" id="qposition" value=""><br><br>
 		<a href="javascript:cancelmove();" class="btn btn-danger" style="cursor:pointer;">Cancel</a> &nbsp; &nbsp; &nbsp; &nbsp;
 		<a href="javascript:movequestion();" class="btn btn-info" style="cursor:pointer;">Move</a>

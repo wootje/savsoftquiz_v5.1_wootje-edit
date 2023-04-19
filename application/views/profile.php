@@ -5,26 +5,20 @@
 				echo $result['first_name'] . ' ' . $result['last_name']; ?></h1></div>
 		<div class="col-sm-2">
 			<a href="/users" class="pull-right"><img title="profile image" class="img-circle img-responsive" src="http://www.gravatar.com/avatar/<?php
-				echo md5($result['email']); ?>?s=100"></a>
-		</div>
+				echo md5($result['email']); ?>?s=100"></a></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-3"><!--left col-->
 			<ul class="list-group">
 				<li class="list-group-item text-muted"><?php
 					echo $this->lang->line('profile'); ?></li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('joined'); ?></strong></span> <?php
-					echo $result['registered_date']; ?>
-				</li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+					echo $result['registered_date']; ?></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('group_name'); ?></strong></span> <?php
-					echo $result['group_name']; ?>
-				</li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+					echo $result['group_name']; ?></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('account_type'); ?></strong></span> <?php
 					if ($result['su'] == 1) {
 						echo $this->lang->line('administrator');
@@ -42,28 +36,19 @@
 			</div>
 			<ul class="list-group">
 				<li class="list-group-item text-muted"><?php
-					echo $this->lang->line('activity'); ?>
-					<i class="fa fa-dashboard fa-1x"></i></li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+					echo $this->lang->line('activity'); ?> <i class="fa fa-dashboard fa-1x"></i></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('quiz_attempted'); ?></strong></span> <?php
-					echo $attempted; ?>
-				</li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+					echo $attempted; ?></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('pass'); ?></strong></span> <?php
-					echo $pass; ?>
-				</li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+					echo $pass; ?></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('fail'); ?></strong></span> <?php
-					echo $fail; ?>
-				</li>
-				<li class="list-group-item text-right">
-					<span class="pull-left"><strong><?php
+					echo $fail; ?></li>
+				<li class="list-group-item text-right"><span class="pull-left"><strong><?php
 							echo $this->lang->line('last_attempt'); ?></strong></span> <?php
-					echo $lastattempt; ?>
-				</li>
+					echo $lastattempt; ?></li>
 			</ul>
 		</div><!--/col-3-->
 		<div class="col-sm-9">

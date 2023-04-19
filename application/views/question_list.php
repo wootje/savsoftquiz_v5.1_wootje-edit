@@ -88,11 +88,9 @@
 				foreach ($result as $key => $val) {
 					?>
 					<tr>
-						<td>
-							<a href="javascript:show_question_stat('<?php
+						<td><a href="javascript:show_question_stat('<?php
 							echo $val['qid']; ?>');">+</a> <?php
-							echo $val['qid']; ?>
-						</td>
+							echo $val['qid']; ?></td>
 						<td><?php
 							echo substr(strip_tags($val['question']), 0, 40); ?>
 							<span style="display:none;" id="stat-<?php
@@ -120,7 +118,7 @@
 						<td><?php
 							echo $val['question_type']; ?></td>
 						<td><?php
-							echo $val['category_name']; ?> / <span style="font-size:12px;"><?php
+							echo $val['category_name']; ?> / <span><?php
 								echo $val['level_name']; ?></span></td>
 						<td><?php
 							if ($val['no_time_served'] != '0') {
@@ -280,8 +278,7 @@
 			<input type="hidden" name="size" value="3500000">
 			<input type="file" name="word_file" style="width:150px;float:left;margin-left:10px;">
 			<div style="clear:both;"></div>
-			<p style="padding:10px;">
-				<a href="javascript:advanceconfig();"><?php
+			<p style="padding:10px;"><a href="javascript:advanceconfig();"><?php
 					echo $this->lang->line('advance_options'); ?></a></p>
 			<div id="advanceconfig" style="padding:10px;display:none">
 				<table>

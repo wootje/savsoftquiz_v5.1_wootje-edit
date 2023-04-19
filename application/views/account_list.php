@@ -1,13 +1,12 @@
 <?php
 if ($this->session->flashdata('message')) {
 	echo $this->session->flashdata('message');
-}
-?>
+} ?>
 <br><br>
 <div class="col-lg-12">
 	<a href="<?php
 	echo site_url('payment_gateway'); ?>" class="btn btn-success"><?php
-		echo $this->lang->line('add_new'); ?></a> <br> <br>
+		echo $this->lang->line('add_new'); ?></a><br><br>
 	<center>
 		<table class="table table-hover table-bordered">
 			<thead>
@@ -32,14 +31,12 @@ if ($this->session->flashdata('message')) {
 							<a href="<?php
 							echo site_url('Account/pre_remove_account/' . $val['account_id']); ?>"><img src="<?php
 								echo base_url('images/cross.png'); ?>"></a>
-							<?php
-						}
-						?>
+						<?php
+						} ?>
 					</td>
 				</tr>
-				<?php
-			}
-			?>
+			<?php
+			} ?>
 			</tbody>
 		</table>
 	</center>

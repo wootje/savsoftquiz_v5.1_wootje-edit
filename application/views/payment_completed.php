@@ -12,7 +12,8 @@
 					}
 					?>
 					<h3><?php
-						echo $title; ?></h3>                    <br><br>
+						echo $title; ?></h3>
+					<br><br>
 					<?php
 					echo $this->lang->line('payment_success_message'); ?>
 					<br>
