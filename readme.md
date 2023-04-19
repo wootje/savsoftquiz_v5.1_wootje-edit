@@ -65,3 +65,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <br>
 <br>
 <br>
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/wootje/savsoftquiz_v5.1_php7-8/total">
