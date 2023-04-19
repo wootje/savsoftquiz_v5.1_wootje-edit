@@ -31,6 +31,9 @@ I'm planning to simplify the tool so everyone can use it.
 <br>
 <br>
 <br>
+<img alt="GitHub all releases" src="https://img.shields.io/github/downloads/wootje/savsoftquiz_v5.1_php7-8/total">
+<br>
+<br>
 <strong>The default interface</strong>
 <br>
 <br>
