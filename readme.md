@@ -12,7 +12,7 @@ I'm planning to simplify the tool so everyone can use it.
 - Rebuild login page
 - Rebuild register page
 - Added redirects to register process so the user won't have to navigate manually
-- Beautified/reforatted most of the code so it's mmuch easier to read
+- Beautified/reforatted most of the code so it's much easier to read
 - New SQL import file - removed all unnecessary files
 - Imported all external CSS code - not depended on external platforms any more
 - Added CSS code for mobile users
