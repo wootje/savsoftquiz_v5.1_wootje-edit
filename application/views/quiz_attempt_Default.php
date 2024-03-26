@@ -120,6 +120,8 @@ echo base_url('js/basic.js?q=' . time()); ?>"></script>
 					'10' => 'J',
 					'11' => 'K'
 				);
+// how to show here if another question language is selected other than english as it was available ther in edit question in different language https://github.com/craziks-creator/savasoft_v5/blob/9b77891024076b14c687760091bc12a80015be1f/application/views/edit_question_1.php#L98C127-L98C127
+
 				foreach ($questions as $qk => $question) {
 					?>
 					<div id="q<?php
