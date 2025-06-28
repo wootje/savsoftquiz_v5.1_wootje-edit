@@ -48,6 +48,10 @@ Online Demo of stock 5.0 version: <a href="https://softaculous.com/softaculous/d
 8. Enjoy the software<br>
 <br>
 <br>
+<b>Buy me a cup of coffee!</b> 🙂👍 <br>
+https://urlshrt.eu/buycupofcoffee
+<br>
+<br>
 <br>
 <strong>The MIT License</strong>
 <br> 
