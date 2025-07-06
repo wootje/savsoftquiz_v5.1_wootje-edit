@@ -23,12 +23,6 @@ I'm planning to simplify the tool so everyone can use it.
 - A lot of random restyling
 <br>
 <br>
-<strong>To do:</strong><br>
-- Rewrite php code to connect to MYSQL database for php7/8 <br>
-- <i>can't run above php7.0 currently</i>
-<br>
-<br>
-<br>
 <strong>Useful links</strong>
 <br> 
 Online Demo of stock 5.0 version: <a href="https://softaculous.com/softaculous/demos/Savsoft_Quiz" target="onlindedemo">https://softaculous.com/softaculous/demos/Savsoft_Quiz</a> 
