@@ -50,7 +50,7 @@ Online Demo of stock 5.0 version: <a href="https://softaculous.com/softaculous/d
 <br>
 <b>Buy me a cup of coffee!</b> 🙂👍 <br>
 https://urlshrt.eu/buycupofcoffee
-> <br>
+<br>
 <br>
 <img src="https://urlshrt.eu/donateqr"></img>
 <br>
